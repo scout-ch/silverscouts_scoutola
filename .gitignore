@@ -1,0 +1,5 @@
+/*
+!.devcontainer/
+!.gitignore
+!plugins
+plugins/google_login/
