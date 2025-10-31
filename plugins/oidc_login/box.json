@@ -1,0 +1,8 @@
+{
+  "main": "./vendor/autoload.php",
+  "output": "vendor.phar",
+  "compression": "GZ",
+  "directories": ["vendor"],
+  "exclude-composer-files": false,
+  "exclude-dev-files": true
+}

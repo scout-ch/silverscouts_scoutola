@@ -3,3 +3,5 @@
 !.gitignore
 !plugins
 plugins/google_login/
+!/composer.json
+!/composer.lock
