@@ -1,4 +1,4 @@
-FROM php:8-cli
+FROM php:8.4-cli
 RUN apt-get update && \
     apt-get install -y unzip gpg git wget \
         libfreetype6-dev libjpeg62-turbo-dev libpng-dev libwebp-dev libxpm-dev && \

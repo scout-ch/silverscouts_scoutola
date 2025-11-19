@@ -1,7 +1,5 @@
 <?php
 
-require_once osc_plugin_folder(__FILE__) . 'plugin.php';
-
 function oidc_plugin_admin_page_title($string) {
   return sprintf(__('OpenID Connect Settings - %s'), $string);
 }
@@ -9,12 +7,14 @@ osc_add_filter('admin_title', 'oidc_plugin_admin_page_title');
   
 $client_id = oidc_plugin_get_preference('client_id');
 $client_secret = oidc_plugin_get_preference('client_secret');
-$discovery_url = oidc_plugin_get_preference('discovery_url');
+$issuer = oidc_plugin_get_preference('issuer');
+$scopes = oidc_plugin_get_preference('scopes');
 
 if(isset($_POST)) {
   if(Params::existParam('client_id')) $client_id = oidc_plugin_set_preference('client_id', Params::getParam('client_id'));
   if(Params::existParam('client_secret')) $client_secret = oidc_plugin_set_preference('client_secret', Params::getParam('client_secret'));
-  if(Params::existParam('discovery_url')) $discovery_url = oidc_plugin_set_preference('discovery_url', Params::getParam('discovery_url'));
+  if(Params::existParam('issuer')) $issuer = oidc_plugin_set_preference('issuer', Params::getParam('issuer'));
+  if(Params::existParam('scopes')) $scopes = oidc_plugin_set_preference('scopes', Params::getParam('scopes'));
 }
 ?>
 
@@ -42,9 +42,21 @@ if(isset($_POST)) {
           </div>
         </div>
         <div class="form-row">
-          <div class="form-label"><?php _e('discvoery'); ?></div>
+          <div class="form-label"><?php _e('discovery'); ?></div>
           <div class="form-controls">
-            <input type="text" class="input-large" name="discovery_url" value="<?php echo $discovery_url; ?>" />
+            <input type="text" class="input-large" name="issuer" value="<?php echo $issuer; ?>" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-label"><?php _e('scopes'); ?></div>
+          <div class="form-controls">
+            <input type="text" class="input-large" name="scopes" value="<?php echo $scopes; ?>" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-label"><?php _e('redirect_uri'); ?></div>
+          <div class="form-controls">
+            <?php echo oidc_plugin_redirect_uri(); ?>
           </div>
         </div>
           

@@ -15,6 +15,13 @@
 	"workspaceFolder": "/workspace",
 	"features": {
 		"ghcr.io/devcontainers/features/git:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"bmewburn.vscode-intelephense-client"
+			]
+		}
 	}
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},

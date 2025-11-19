@@ -1,5 +1,5 @@
 {
     "require": {
-        "oidc/core": "^0.17.0"
+        "jumbojett/openid-connect-php": "^1.0"
     }
 }
