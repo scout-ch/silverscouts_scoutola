@@ -38,30 +38,39 @@ class OIDCIdentity extends DAO
 
   public function findOrCreateByUserInfo($provider, $userInfo)
   {
-    if (empty($provider) || empty($userInfo) || empty($userInfo->sub)) {
+    if (empty($provider) || empty($userInfo) || empty($userInfo["sub"])) {
       return null;
     }
 
-    $sub = $userInfo->sub;
-    $email = $userInfo->email;
+    $sub = $userInfo["sub"];
+    $email = $userInfo["email"];
     $identity = $this->findByProviderSub($provider, $sub);
+    $identityData = [
+      's_provider' => $provider,
+      's_sub' => $sub,
+      's_email' => $email,
+      's_user_info' => serialize($userInfo),
+      'dt_updated_at' => date("Y-m-d H:i:s"),
+    ];
 
-    if (!$identity) {
+    if ($identity) {
+      $this->dao->update(
+        $this->getTableName(),
+        $identityData,
+        ['s_provider' => $provider, 's_sub' => $sub]
+      );
+    } else {
       $this->dao->insert(
         $this->getTableName(),
-        [
-          's_provider' => $provider,
-          's_sub' => $sub,
-          's_email' => $email,
-          'dt_created_at' => date("Y-m-d H:i:s"),
-        ]
+        array_merge($identityData, ['dt_created_at' => date("Y-m-d H:i:s")])
       );
+
       $identity = $this->findByProviderSub($provider, $sub);
     }
     return $identity;
   }
 
-  public function findOrCreateUserForIdentity($identity)
+  public function findOrCreateUserForIdentity($identity, $userInfo = null)
   {
     if (empty($identity)) {
       return null;
@@ -75,17 +84,25 @@ class OIDCIdentity extends DAO
     }
 
     // user exists but is not yet linked
-    if (!$user && !empty($identity['s_email'])) {
+    if ((!isset($user) || !$user) && !empty($identity['s_email'])) {
       $user = $userDAO->findByEmail($identity['s_email']);
     }
 
     // user does not yet exist
     if (!$user && !empty($identity['s_email'])) {
       $now = date("Y-m-d H:i:s");
+      if (!empty($userInfo["first_name"]) || !empty($userInfo["last_name"])) {
+        $name = trim(implode(' ', [$userInfo["first_name"], $userInfo["last_name"]]));
+      }
+      if (empty($name)) {
+        $name = $identity["s_sub"];
+      }
+
       $this->dao->insert(
         $userDAO->getTableName(),
         [
-          's_name' => $identity["s_sub"],
+          's_username' => $identity["s_sub"],
+          's_name' => $name,
           's_email' => $identity['s_email'],
           's_secret' => osc_genRandomPassword(),
           's_password' => osc_hash_password(osc_genRandomPassword()),
@@ -108,9 +125,9 @@ class OIDCIdentity extends DAO
     return $user;
   }
 
-  public function linkUserToIdentity($identity)
+  public function linkUserToIdentity($identity, $userInfo = null)
   {
-    $user = $this->findOrCreateUserForIdentity($identity);
+    $user = $this->findOrCreateUserForIdentity($identity, $userInfo);
 
     if (empty($user)) {
       return null;
@@ -120,24 +137,26 @@ class OIDCIdentity extends DAO
     $now = date("Y-m-d H:i:s");
     $userId = $user['pk_i_id'];
 
-    $identityUpdateOk = $this->dao->update(
+
+    if ($this->dao->update(
       $this->getTableName(),
       ['fk_i_user_id' => $userId, 'dt_updated_at' => $now],
       ['s_provider' => $identity['s_provider'], 's_sub' => $identity["s_sub"]]
-    );
-
-    $userUpdateOk = $this->dao->update($userDAO->getTableName(), ['dt_access_date' => $now, 'b_active' => 1], ['pk_i_id' => $userId]);
-
-    if ($identityUpdateOk && $userUpdateOk) {
-      return $user;
+    ) === false) {
+      return null;
     }
-    return null;
+
+    if ($this->dao->update($userDAO->getTableName(), ['dt_access_date' => $now, 'b_active' => 1], ['pk_i_id' => $userId]) === false) {
+      return null;
+    }
+
+    return $user;
   }
 
   public function findUserByUserInfo($provider, $userInfo)
   {
     $identity = $this->findOrCreateByUserInfo($provider, $userInfo);
-    $user = $this->linkUserToIdentity($identity);
+    $user = $this->linkUserToIdentity($identity, $userInfo);
 
     if (empty($identity) || empty($user)) {
       return false;

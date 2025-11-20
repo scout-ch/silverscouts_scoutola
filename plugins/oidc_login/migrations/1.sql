@@ -5,6 +5,7 @@ CREATE TABLE /*TABLE_PREFIX*/t_oidc_identities (
   s_sub VARCHAR(255) NOT NULL,
   s_email VARCHAR(100) NOT NULL,
   fk_i_user_id INT(10) UNSIGNED NULL,
+  s_user_info TEXT,
   dt_created_at TIMESTAMP,
   dt_updated_at TIMESTAMP,
   PRIMARY KEY (s_provider, s_sub),

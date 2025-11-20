@@ -2,13 +2,15 @@
 
 require_once oidc_plugin_folder() . 'user.php';
 
+oidc_plugin_migrate_database();
+
 $client = oidc_plugin_client();
 $client->authenticate();
 $userInfo = $client->requestUserInfo();
 
 osc_run_hook('before_login');
 $identityDAO = new OIDCIdentity();
-$user = $identityDAO->findUserByUserInfo('test', $userInfo);
+$user = $identityDAO->findUserByUserInfo('test', (array) $userInfo);
 
 if (!empty($user)) {
   oidc_plugin_login_user($user);
