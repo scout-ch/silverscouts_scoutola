@@ -3,10 +3,12 @@
 
 // initial setup upon installing the plugin
 function oidc_plugin_hook_install() {
-  oidc_plugin_get_preference('client_id', '');
-  oidc_plugin_get_preference('client_secret', '');
-  oidc_plugin_get_preference('issuer', '');
-  oidc_plugin_get_preference('scopes', 'email name openid');
+  oidc_plugin_set_preference('client_id', '');
+  oidc_plugin_set_preference('client_secret', '');
+  oidc_plugin_set_preference('issuer', '');
+  oidc_plugin_set_preference('scopes', 'email name openid');
+  oidc_plugin_migrate_database();
+
 }
 osc_register_plugin(oidc_plugin_folder(), 'oidc_plugin_hook_install');
 

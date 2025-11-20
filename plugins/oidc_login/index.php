@@ -44,4 +44,35 @@ function oidc_plugin_client() {
   return $oidc;
 }
 
+function oidc_plugin_migration_version() {
+  return strval(oidc_plugin_get_preference('migration_version'));
+}
+
+function oidc_plugin_migrate_database() {
+  $migrationPaths = glob(oidc_plugin_folder() . 'migrations/*.sql');
+  $db = DBConnectionClass::newInstance()->getOsclassDb();
+  $cmd = new DBCommandClass($db);
+
+  foreach ($migrationPaths as $migrationPath) {
+    $migrationVersion = basename($migrationPath, '.sql'); 
+    if($migrationVersion <= oidc_plugin_migration_version()) continue;
+  
+    $migrationSql = file_get_contents($migrationPath);
+
+    if(!$cmd->importSQL($migrationSql) ) {
+      throw new Exception("Migration failed");
+    }
+
+    oidc_plugin_set_preference('migration_version', $migrationVersion);
+  }
+}
+
+function oidc_plugin_login_user($user) {
+  $cookie = Cookie::newInstance() ;
+  $cookie->set_expires(osc_time_cookie());
+  $cookie->push('oc_userId', $user['pk_i_id']);
+  $cookie->push('oc_userSecret', $user['s_secret']);
+  $cookie->set();
+}
+
 require_once oidc_plugin_folder() . 'hooks.php';
