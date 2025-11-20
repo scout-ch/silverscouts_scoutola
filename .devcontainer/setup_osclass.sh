@@ -11,4 +11,4 @@ curl -L "$OSCLASS_URL" -o "$OSCLASS_ZIP"
 unzip -o "$OSCLASS_ZIP"
 rm "$OSCLASS_ZIP"
 
-ln -snf ../../plugins/oidc_login ./oc-content/plugins/oidc_login
+ln -sf ../../plugins/oidc_login ./oc-content/plugins/oidc_login

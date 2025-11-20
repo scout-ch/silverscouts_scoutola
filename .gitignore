@@ -1,6 +1,7 @@
 /*
 !.devcontainer/
 !.gitignore
+!.htaccess
 !plugins
 plugins/google_login/
 !/composer.json

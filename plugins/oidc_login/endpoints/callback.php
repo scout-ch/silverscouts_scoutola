@@ -10,7 +10,7 @@ osc_run_hook('before_login');
 $identityDAO = new OIDCIdentity();
 $user = $identityDAO->findUserByUserInfo('test', $userInfo);
 
-if(!empty($user)) {
+if (!empty($user)) {
   oidc_plugin_login_user($user);
   osc_add_flash_ok_message(__('You are now logged in.'));
   $redirect = osc_user_dashboard_url();
