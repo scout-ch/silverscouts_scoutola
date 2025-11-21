@@ -14,7 +14,7 @@ class OIDCIdentity extends DAO
       'fk_i_user_id',
       'dt_created_at',
       'dt_updated_at',
-      's_access_token'
+      's_user_info'
     ]);
   }
 
@@ -66,6 +66,8 @@ class OIDCIdentity extends DAO
       );
 
       $identity = $this->findByProviderSub($provider, $sub);
+
+      osc_run_hook('after_oidc_identity_create', $identity, (array) $userInfo);
     }
     return $identity;
   }
@@ -136,7 +138,7 @@ class OIDCIdentity extends DAO
     $userDAO = User::newInstance();
     $now = date("Y-m-d H:i:s");
     $userId = $user['pk_i_id'];
-
+    $identityWasUnlinked = empty($identity['fk_i_user_id']);
 
     if ($this->dao->update(
       $this->getTableName(),
@@ -146,10 +148,13 @@ class OIDCIdentity extends DAO
       return null;
     }
 
-    if ($this->dao->update($userDAO->getTableName(), ['dt_access_date' => $now, 'b_active' => 1], ['pk_i_id' => $userId]) === false) {
+    if ($userDAO->update(['dt_access_date' => $now, 'b_active' => 1], ['pk_i_id' => $userId]) === false) {
       return null;
     }
 
+    if ($identityWasUnlinked) {
+      osc_run_hook('oidc_user_identity_linked', $user, $identity);
+    }
     return $user;
   }
 
