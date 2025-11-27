@@ -3,6 +3,7 @@
 !.gitignore
 !.htaccess
 !plugins
+!themes
 plugins/google_login/
 !/composer.json
 !/composer.lock

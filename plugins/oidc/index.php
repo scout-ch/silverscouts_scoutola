@@ -1,6 +1,6 @@
 <?php
 
-require_once osc_plugin_folder(__FILE__) . 'vendor/autoload.php';
+require_once osc_plugins_path() . osc_plugin_folder(__FILE__) . 'vendor/autoload.php';
 
 function oidc_plugin_admin_path()
 {
@@ -24,7 +24,7 @@ function oidc_plugin_name()
 
 function oidc_plugin_folder()
 {
-  return osc_plugin_folder(__FILE__);
+  return osc_plugins_path() . osc_plugin_folder(__FILE__);
 }
 
 function oidc_plugin_get_preference($name)
