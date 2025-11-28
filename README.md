@@ -53,7 +53,7 @@ osclass must be installed on the target host, please refer to the [official docu
 ### Theme
 
 - Create a backup of the existing theme
-- `rsync -avz --delete ./theme/merged/ <HOST>:sites/scoutola.scout.ch/oc-content/themes/sigma/`
+- `rsync -avz --delete --exclude languages/ ./theme/merged/ <HOST>:sites/scoutola.scout.ch/oc-content/themes/sigma/`
 
 ### Plugins 
 
