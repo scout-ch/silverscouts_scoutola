@@ -1,0 +1,266 @@
+diff -ruN ./base/css/style.css ./merged/css/style.css
+--- ./base/css/style.css	2025-11-27 14:50:39.123229607 +0000
++++ ./merged/css/style.css	2025-11-28 10:10:11.005618346 +0000
+@@ -1,5 +1,16 @@
++/* Theme */
++@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
++:root {
++  --theme-color-header-bg: #ecf2f5;
++  --theme-color-footer-bg: #ecf2f5;
++  --primary-color-main-light:  #618EAD; /* var(--primary-color-main-light) */;
++  --primary-color-main-dark:  #056786;
++  --base-font-family: 'Source Sans 3',sans-serif; 
++  --heading-font-family: 'Source Sans 3',sans-serif; /* Merriweather,serif */
++}
++
+ /* RESET */
+-fieldset{border:none;display:inline-block;padding:0;margin:0;width:100%;}html,input,select,textarea,button{font-family:'Nunito',sans-serif;}div{margin:0;padding:0;}html{color:#222;box-sizing:border-box;font-size:14px;line-height:18px;cursor:default;-moz-tab-size:4;tab-size:4;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;word-break:break-word;}*,*:before,*:after{box-sizing:inherit}body{display:block;margin:0;font-weight:normal;width:100%;}p,ol,ul{display:inline-block;margin:0;padding:0;font-weight:normal;width:100%;}ol,ul{list-style:none}img{max-width:100%;width:auto;height:auto}
++fieldset{border:none;display:inline-block;padding:0;margin:0;width:100%;}html,input,select,textarea,button{font-family:var(--base-font-family);}div{margin:0;padding:0;}html{color:#222;box-sizing:border-box;font-size:14px;line-height:18px;cursor:default;-moz-tab-size:4;tab-size:4;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;word-break:break-word;}*,*:before,*:after{box-sizing:inherit}body{display:block;margin:0;font-weight:normal;width:100%;}p,ol,ul{display:inline-block;margin:0;padding:0;font-weight:normal;width:100%;}ol,ul{list-style:none}img{max-width:100%;width:auto;height:auto}
+ body, html {direction:ltr;}
+ 
+ /* MULTICURRENCY */
+@@ -149,8 +160,8 @@
+ input[type=checkbox] + label {max-width: calc(100% - 30px);font-weight:normal;line-height:18px;display:inline-block;font-size:14px;float:left;width:auto;clear:none;}
+ input[type=text],input[type=url],input[type=password],input[type=email],input[type=date],input[type=time],input[type=week],input[type=month],input[type=color],input[type=datetime-local],input[type=tel],input[type=phone],input[type=number], select, textarea { font-size:15px;border-radius: 0; float: left; border: 2px solid #ccc; background: #fff; height: 50px; padding: 10px 10px; line-height: 20px; margin-bottom: 25px;font-family:'Open Sans',sans-serif;}
+ input:hover, select:hover, textarea:hover { border-color: rgba(0,0,0,.3); }
+-input:focus, select:focus, textarea:focus { border-color: #0d9ecc;outline:none; }
+-input:active, select:active, textarea:active { border-color: #0d9ecc;outline:none; }
++input:focus, select:focus, textarea:focus { border-color: var(--primary-color-main-light);outline:none; }
++input:active, select:active, textarea:active { border-color: var(--primary-color-main-light);outline:none; }
+ label {width: 100%; float: left; clear: both; font-size: 16px; margin: 0 0 3px 0; font-weight: bold; }
+ body.register #main, body.login #main, body.contact #main, body.recover #main {text-align:center;}
+ body.page section {min-height:520px;}
+@@ -235,19 +246,19 @@
+ !body #atr-search .atr-input-box label {padding:0 0 0 24px!important;}
+ body #atr-search .atr-input-box label {font-weight:normal;font-size:15px;}
+ 
+-a {text-decoration:none;color:#0d9ecc;cursor:pointer;}
+-a:hover {text-decoration:underline;color:#0d9ecc;}
+-button, .btn {position:relative;text-align:center;float:left;background:#0d9ecc;color:#fff;padding:8px 12px;font-size:14px;line-height:18px;border:1px solid rgba(0,0,0,0.05);border-bottom-color:rgba(0,0,0,0.1);border-radius:3px;box-shadow:none;outline:none;cursor:pointer;transition:0.2s;}
++a {text-decoration:none;color:var(--primary-color-main-light);cursor:pointer;}
++a:hover {text-decoration:underline;color:var(--primary-color-main-light);}
++button, .btn {position:relative;text-align:center;float:left;background:var(--primary-color-main-light);color:#fff;padding:8px 12px;font-size:14px;line-height:18px;border:1px solid rgba(0,0,0,0.05);border-bottom-color:rgba(0,0,0,0.1);border-radius:3px;box-shadow:none;outline:none;cursor:pointer;transition:0.2s;}
+ .btn-loading, button.btn-loading, .btn.btn-loading {opacity:0.5;cursor:wait;padding-left: 48px;}
+ .btn-loading-nofa, button.btn-loading-nofa, .btn.btn-loading-nofa {opacity:0.5;cursor:wait;}
+ .btn:disabled {opacity:0.5;cursor:not-allowed;}
+ .btn.btn-secondary.btn-loading:hover, .btn.btn-secondary:disabled:hover {border-color:#9bcad8;}
+-.btn.btn-primary.btn-loading:hover, .btn.btn-primary:disabled:hover {background:#0d9ecc;border-color:#0d9ecc;color:#fff;}
++.btn.btn-primary.btn-loading:hover, .btn.btn-primary:disabled:hover {background:var(--primary-color-main-light);border-color:var(--primary-color-main-light);color:#fff;}
+ .btn-loading:before {transition: 0.2s; position: absolute; left: 12px; top: 14px;opacity: 1; z-index: 9; width: 28px; height: 28px; content: ""; display: block; background: transparent url(../img/loader.gif) no-repeat center center; background-size: 100%;}
+ 
+ .btn {border-radius:0;float:left;clear:both;width:auto;padding:13px 20px;line-height:20px;font-size:16px;font-weight:bold;border:2px solid transparent;text-decoration:none;transition:0.2s;cursor:pointer;}
+ .btn:hover, a.btn:hover {text-decoration:none;color:#fff;}
+-.btn.btn-primary {background:#0d9ecc;border-color:#0d9ecc;color:#fff;}
++.btn.btn-primary {background:var(--primary-color-main-light);border-color:var(--primary-color-main-light);color:#fff;}
+ .btn.btn-primary:hover, a.btn.btn-primary:hover {background:#056786;border-color:#056786;color:#fff;}
+ .btn.btn-secondary {background:transparent;border:2px solid #9bcad8;color:#056786;}
+ .btn.btn-secondary:hover, a.btn.btn-secondary:hover {border-color:#056786;color:#056786;}
+@@ -284,7 +295,7 @@
+ .wrapper-flash {font-weight: bold;}
+ body #restricted-fine-uploader { margin-bottom: 20px; float: left; width: 100%; clear: both;padding-left:0; }
+ .item-post .form-horizontal .control-group.img {padding-left:30%;}
+-body .qq-upload-button {padding: 20px 10px; color: #fff; background: #0d9ecc; font-weight: bold;width:100%;}
++body .qq-upload-button {padding: 20px 10px; color: #fff; background: var(--primary-color-main-light); font-weight: bold;width:100%;}
+ #item-content h1 {font-size: 46px; line-height: 50px; margin: 0 0 20px 0;}
+ #sidebar .price {padding:8px 5px;font-weight:bold;float:left;width:100%;margin:0 0 12px 0;color:#000;font-size:40px;line-height:44px;text-align:right;}
+ .flashmessage {font-size: 16px;padding: 18px 50px 18px 10px;width: 100%;top:0px;z-index: 8;text-align: center;color: #ffffff;position: relative;}
+@@ -319,7 +330,7 @@
+ #responsive-trigger {display: none;}
+ fieldset {border: 0;margin: 0;padding: 0;}
+ h1, h2, h3, h4,h5 {display:inline-block;margin:0;padding:0;font-weight:normal;width:100%;}
+-h1, h2.h1 {font-size:40px;line-height:44px;color:#000;margin:10px 0 15px 0;font-family:Merriweather,serif;font-weight:normal;}
++h1, h2.h1 {font-size:40px;line-height:44px;color:#000;margin:10px 0 15px 0;font-family:var(--heading-font-family);font-weight:normal;}
+ h2, h3.h2 {font-size:24px;line-height:28px;margin:10px 0 25px 0;font-weight:bold;}
+ h3 {font-size:20px;line-height:24px;font-weight:bold;}
+ h4 {font-size:18px;line-height:22px;font-weight:bold;}
+@@ -367,7 +378,7 @@
+ .error404 h2 {font-size:36px;line-height:40px;}
+ .error404 h3 {margin-bottom:40px;}
+ .error404 .btn {float:none;display:inline-block;}
+-footer {padding: 35px 0 25px 0;background:#cde8e9;}
++footer {padding: 35px 0 25px 0;background:var(--theme-color-footer-bg);}
+ footer .box > a {color:rgba(0,0,0,0.7);font-size:15px;margin:0 25px 10px 0px;display:inline-block;font-weight:bold;float:left;line-height:20px;}
+ footer .box > a:hover {color:rgba(0,0,0,0.9);text-decoration:underline;}
+ footer .bottom {float:left;clear:both;color:#ccc;font-size:16px;line-height:22px;margin:10px 0;}
+@@ -378,7 +389,7 @@
+ footer .language a.active {font-weight:bold;}
+ header {background-color: #fff;width: 100%;height: auto;display: block;position: relative;margin:0;padding:10px 15px;}
+ body.osc-has-admin-header header {margin-top:0;}
+-body.home header, body.home section.home-search, body.home section.header-ad {background-color:#F1FAEE;}
++body.home header, body.home section.home-search, body.home section.header-ad {background-color:var(--theme-color-header-bg);}
+ body.home section.home-search {padding-top:0;padding-bottom:0;}
+ header .wrapper {position: relative;}
+ header .ads_header {width: 728px;margin-left: auto;margin-right: auto;padding: 10px 0px 10px 0px;}
+@@ -387,7 +398,7 @@
+ header #logo img { display: inline-block; height: 55px; width: auto; margin: 5px 0; }
+ header .nav { float: right; height: 65px; }
+ header .nav a { font-weight: bold; font-size: 16px;line-height: 25px; margin: 16px 0 16px 3px;height: 35px; padding: 5px 12px; border: 1px solid transparent;float: left; transition: .2s; border-radius: 100px; }
+-header .nav a:hover { border-color: #0d9ecc; text-decoration: none; }
++header .nav a:hover { border-color: var(--primary-color-main-light); text-decoration: none; }
+ header .nav a.publish { background: #000; border-color: #000; color: #fff; text-decoration: none; }
+ header .nav a.publish:hover { box-shadow: 0 0 2px 5px #ccc; border-color: #000; }
+ header .nav a.my-account {float:left;margin: 16px 3px 16px 6px;padding: 5px 10px 2px 41px;height:35px;position:relative;display:flex;flex-direction: column; align-items: flex-start; align-content: flex-start;}
+@@ -459,7 +470,7 @@
+ #main h5 {margin-bottom: 10px;}
+ #related-searches {padding-top: 20px;margin:20px 0;border-top:1px solid rgba(0,0,0,0.1);}
+ #related-searches h5 {margin-bottom: 5px;font-size: 15px;}
+-#related-searches a {font-size:14px;font-weight:normal;padding:4px 6px;margin:0 6px 5px 0;border:1px solid #0d9ecc;border-radius:4px;transition:0.2s;display:block;float:left;}
++#related-searches a {font-size:14px;font-weight:normal;padding:4px 6px;margin:0 6px 5px 0;border:1px solid var(--primary-color-main-light);border-radius:4px;transition:0.2s;display:block;float:left;}
+ #related-searches a:hover {border-color:#000;text-decoration:none;color:#000;}
+ body.search h1 {margin:0 0 22px 0;font-size:32px;line-height:36px;font-weight:600;}
+ .listing-card {clear: both;padding: 20px 0;margin: 0;border: 0;border-bottom: 1px solid rgba(0,0,0,0.1);position: relative;width: 100%;display: table;}
+@@ -550,7 +561,7 @@
+ .item-photos .main-photo {width: 550px;float: left;}
+ .item-photos .thumbs {float: right;width: 79px;}
+ .item-photos .thumbs img {margin-bottom: 10px;border: solid 2px rgba(0,0,0,0.1);transition:0.2s;}
+-.item-photos .thumbs img:hover {border-color:#0d9ecc;}
++.item-photos .thumbs img:hover {border-color:var(--primary-color-main-light);}
+ .item-photos { margin: 0 0 25px 0; display: block; float: left; width: 100%; }
+ .item-header {margin:0 0 15px 0;padding:12px 5px;border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px solid rgba(0,0,0,0.1);}
+ .item-header #type_dates {float: right;}
+@@ -603,7 +614,7 @@
+ .item #comments h3 {font-size: 16px;line-height:18px;margin:0 0 10px 0;}
+ .item #comments input[type="text"] {height:40px;padding:8px;width:60%;margin:0;}
+ .item #comments textarea {height:120px;padding:8px;width:90%;margin:0;}
+-.item #comments {clear: both;float: left;width: 100%;background:#F1FAEE;padding:20px 20px 30px 20px;margin:10px 0 0 0;}
++.item #comments {clear: both;float: left;width: 100%;background:var(--theme-color-header-bg);padding:20px 20px 30px 20px;margin:10px 0 0 0;}
+ .item #comments .comments_list {margin-bottom: 20px;float:left;width:100%;}
+ .item #comments .comment {margin:0;padding:15px 5px;border-top:1px solid rgba(0,0,0,0.1);position:relative;}
+ .item #comments .comment.has-user-img {padding-left:60px;} 
+@@ -682,4 +693,8 @@
+ body i.fa-cc-mastercard:before {font-family: "Font Awesome 5 Brands"!important;font-weight: 400;}
+ 
+ body #atr-form .atr-input-box label:after, .osp-promote-form label.osp-chk div:hover:after, body .osp-body-itempay .osp-promote-form .osp-h1:after,
+-body #atr-search .atr-box:after, body #atr-search .atr-input-box label:after, .osp-promote-form label.osp-chk div:after {font-family:"Font Awesome 5 Free";font-weight:900;}
+\ No newline at end of file
++body #atr-search .atr-box:after, body #atr-search .atr-input-box label:after, .osp-promote-form label.osp-chk div:after {font-family:"Font Awesome 5 Free";font-weight:900;}
++
++form.search h1 small {
++  font-size: 0.5em;
++}
+\ No newline at end of file
+diff -ruN ./base/head.php ./merged/head.php
+--- ./base/head.php	2025-11-27 14:50:39.124936489 +0000
++++ ./merged/head.php	2025-11-28 09:23:37.490073486 +0000
+@@ -85,14 +85,9 @@
+   echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>';
+ }, 7);
+ 
+-osc_enqueue_style('font-sigma', 'https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Nunito:wght@400;700&display=swap');
+ osc_enqueue_style('style', osc_current_web_theme_url('css/style.css?v=' . date('YmdHis')));
+ osc_enqueue_style('responsive', osc_current_web_theme_url('css/responsive.css?v=' . date('YmdHis')));
+ 
+-if(sigma_is_rtl()) {
+-  osc_enqueue_style('rtl', osc_current_web_theme_url('css/rtl.css?v=' . date('YmdHis')));
+-}
+-
+ if(osc_is_publish_page() || osc_is_edit_page() || osc_is_search_page()) {
+   if($jquery_version == '1') {
+     osc_enqueue_style('jquery-ui', osc_assets_url('css/jquery-ui/jquery-ui.css'));
+diff -ruN ./base/item-sidebar.php ./merged/item-sidebar.php
+--- ./base/item-sidebar.php	2025-11-27 14:50:39.126980226 +0000
++++ ./merged/item-sidebar.php	2025-11-28 09:46:18.939175424 +0000
+@@ -143,15 +143,5 @@
+ 
+   <?php osc_run_hook('item_contact'); ?>
+ 
+-  <div id="useful_info">
+-    <h2><?php _e('Useful information', 'sigma'); ?></h2>
+-    <ul>
+-      <li><?php _e('Avoid scams by acting locally or paying with PayPal', 'sigma'); ?></li>
+-      <li><?php _e('Never pay with Western Union, Moneygram or other anonymous payment services', 'sigma'); ?></li>
+-      <li><?php _e('Don\'t buy or sell outside of your country. Don\'t accept cashier cheques from outside your country', 'sigma'); ?></li>
+-      <li><?php _e('This site is never involved in any transaction, and does not handle payments, shipping, guarantee transactions, provide escrow services, or offer "buyer protection" or "seller certification"', 'sigma'); ?></li>
+-    </ul>
+-  </div>
+-  
+   <?php osc_run_hook('item_sidebar_bottom'); ?>
+ </div><!-- /sidebar -->
+diff -ruN ./base/item.php ./merged/item.php
+--- ./base/item.php	2025-11-27 14:50:39.127153629 +0000
++++ ./merged/item.php	2025-11-28 09:53:43.264416601 +0000
+@@ -122,7 +122,6 @@
+ 
+     <div class="item-hook"><?php osc_run_hook('item_detail', osc_item() ); ?></div>
+ 
+-
+     <p class="contact_button">
+       <?php if( !osc_item_is_expired () && 1==2) { ?>
+         <?php if( !( ( osc_logged_user_id() == osc_item_user_id() ) && osc_logged_user_id() != 0 ) ) { ?>
+@@ -140,8 +139,6 @@
+     </p>
+ 
+     <?php osc_run_hook('location'); ?>
+-    
+-    <div class="item-views"><?php echo sprintf(__('%d page views', 'sigma'), osc_item_views()); ?></div>
+ 
+   </div>
+   <!-- plugins -->
+diff -ruN ./base/user-login.php ./merged/user-login.php
+--- ./base/user-login.php	2025-11-27 14:50:39.133854705 +0000
++++ ./merged/user-login.php	2025-11-28 10:16:16.145166816 +0000
+@@ -16,57 +16,18 @@
+  */
+ 
+ 
+-    // meta tag robots
+-    osc_add_hook('header','sigma_nofollow_construct');
++// meta tag robots
++osc_add_hook('header', 'sigma_nofollow_construct');
+ 
+-    sigma_add_body_class('login');
+-    osc_current_web_theme_path('header.php');
++sigma_add_body_class('login');
++osc_current_web_theme_path('header.php');
+ ?>
+ <div class="form-container form-horizontal form-container-box">
+     <div class="header">
+         <h1><?php _e('Access to your account', 'sigma'); ?></h1>
+     </div>
+     <div class="resp-wrapper">
+-        <form action="<?php echo osc_base_url(true); ?>" method="post" >
+-            <input type="hidden" name="page" value="login" />
+-            <input type="hidden" name="action" value="login_post" />
+-            
+-            <?php osc_run_hook('user_pre_login_form'); ?>
+-            
+-            <div class="control-group">
+-                <label class="control-label" for="email"><?php _e('E-mail', 'sigma'); ?></label>
+-                <div class="controls">
+-                    <?php UserForm::email_login_text(); ?>
+-                </div>
+-            </div>
+-            <div class="control-group">
+-                <label class="control-label" for="password"><?php _e('Password', 'sigma'); ?></label>
+-                <div class="controls">
+-                    <?php UserForm::password_login_text(); ?>
+-                </div>
+-            </div>
+-
+-            <div class="control-group remember">
+-                <div class="controls checkbox">
+-                    <?php UserForm::rememberme_login_checkbox();?> <label for="remember"><?php _e('Remember me', 'sigma'); ?></label>
+-                </div>
+-            </div>
+-
+-            <?php osc_run_hook('user_login_form'); ?>
+-
+-            <div class="control-group"><?php osc_show_recaptcha('login'); ?></div>
+-            
+-            <div class="control-group butt">
+-                <div class="controls">
+-                    <button type="submit" class="btn btn-primary"><?php _e("Log in", 'sigma');?></button>
+-                </div>
+-            </div>
+-
+-            <div class="control-group act">
+-                <a href="<?php echo osc_register_account_url(); ?>" class="rg"><?php _e("Register for a free account", 'sigma'); ?></a>
+-                <a href="<?php echo osc_recover_user_password_url(); ?>" class="lg"><?php _e("Forgot password?", 'sigma'); ?></a>
+-            </div>
+-        </form>
++      <a class="btn btn-login" href="<?php echo osc_route_url('oidc_plugin_login'); ?>"><?php _e('Log in', 'sigma'); ?></a>
+     </div>
+ </div>
+-<?php osc_current_web_theme_path('footer.php') ; ?>
+\ No newline at end of file
++<?php osc_current_web_theme_path('footer.php'); ?>
