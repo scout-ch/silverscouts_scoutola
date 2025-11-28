@@ -2,33 +2,33 @@
 
 // require_once osc_plugin_folder(__FILE__) . 'vendor/autoload.php';
 
-function pbs_plugin_name()
+function silverscouts_plugin_name()
 {
-  return "pbs";
+  return "silverscouts";
 }
 
-function pbs_plugin_folder()
+function silverscouts_plugin_folder()
 {
   return osc_plugin_folder(__FILE__);
 }
 
-function pbs_plugin_get_preference($name)
+function silverscouts_plugin_get_preference($name)
 {
-  return osc_get_preference($name, pbs_plugin_name());
+  return osc_get_preference($name, silverscouts_plugin_name());
 }
 
-function pbs_plugin_set_preference($name, $value, $type = 'STRING')
+function silverscouts_plugin_set_preference($name, $value, $type = 'STRING')
 {
-  osc_set_preference($name, $value, pbs_plugin_name(), $type);
+  osc_set_preference($name, $value, silverscouts_plugin_name(), $type);
   return $value;
 }
 
-// function pbs_plugin_after_oidc_identity_create($user, $userInfo)
+// function silverscouts_plugin_after_oidc_identity_create($user, $userInfo)
 // {
 // }
-// osc_add_hook('after_oidc_identity_create', 'pbs_plugin_after_oidc_identity_create');
+// osc_add_hook('after_oidc_identity_create', 'silverscouts_plugin_after_oidc_identity_create');
 
-function pbs_plugin_oidc_user_identity_linked($user, $identity)
+function silverscouts_plugin_oidc_user_identity_linked($user, $identity)
 {
   $userDAO = User::newInstance();
   $userInfo = unserialize($identity['s_user_info']);
@@ -62,23 +62,23 @@ function pbs_plugin_oidc_user_identity_linked($user, $identity)
   Session::newInstance()->_set('userName', $updateData['s_name']);
 }
 
-osc_add_hook('oidc_user_identity_linked', 'pbs_plugin_oidc_user_identity_linked');
+osc_add_hook('oidc_user_identity_linked', 'silverscouts_plugin_oidc_user_identity_linked');
 
-function pbs_plugin_page_restricted()
+function silverscouts_plugin_page_restricted()
 {
   $restrictedPages = ["item", "search", "user"];
   return in_array(Params::getParam('page'), $restrictedPages);
 }
 
-function pbs_plugin_hook_before_init()
+function silverscouts_plugin_hook_before_init()
 {
-  if (!osc_logged_user_id() && pbs_plugin_page_restricted()) {
+  if (!osc_logged_user_id() && silverscouts_plugin_page_restricted()) {
     // var_dump(Params::getParam('page'));
     osc_redirect_to(osc_user_login_url());
     exit;
   }
 }
-osc_add_hook('before_init', 'pbs_plugin_hook_before_init');
+osc_add_hook('before_init', 'silverscouts_plugin_hook_before_init');
 
 // Override the existing menu
 function get_user_menu()
