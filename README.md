@@ -24,10 +24,10 @@ To start development, follow these steps:
 1. Install composer dependencies with `cd plugins/oidc; composer install`
 1. Run `php -S 0.0.0.0:8000` to start the php webserver
 1. Open http://localhost:8000 in your browser and run osclass setup. Use the following db parameters:
-  - Host: `db`
-  - Username: osclass
-  - Password: osclass
-  - Database: osclass
+  - Host: *db*
+  - Username: *osclass*
+  - Password: *osclass*
+  - Database: *osclass*
 
 ### Theme
 
@@ -41,7 +41,10 @@ The theme is stored as a patch to allow for update later on in the lifecycle.
 
 ### Plugins
 
-The oidc plugin has composer dependencies. Install them with `composer install` from the plugins folder.
+#### OIDC
+
+- The oidc plugin has composer dependencies. Install them with `composer install` from the plugins folder.
+- The oidc plugin also relies on a database. If you make changes to the schema, you must create a migration in the *migrations/* folder as an SQL-file. Increment the version number to ensure it's applied correctly.
 
 ## Deployment
 
@@ -58,3 +61,9 @@ osclass must be installed on the target host, please refer to the [official docu
 - [ ] Set correct language names: https://scoutola.scout.ch/oc-admin/index.php?page=languages
 - [ ] Manually change translations: https://scoutola.scout.ch/oc-admin/index.php?page=translations
 - [ ] Change item settings: https://scoutola.scout.ch/oc-admin/index.php?page=items&action=settings
+
+## Contribute
+
+Please coordinate with the responsible people if any contributions are welcome at this time.
+
+Ask @diegosteiner technical support on the sourcecode.
