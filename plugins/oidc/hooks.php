@@ -15,7 +15,7 @@ osc_register_plugin(osc_plugin_path(__FILE__), 'oidc_plugin_hook_install');
 // render configure page
 function oidc_plugin_hook_configure()
 {
-  osc_admin_render_plugin(oidc_plugin_folder() . 'admin.php');
+  osc_admin_render_plugin(dirname(__FILE__) . '/admin.php');
 }
 osc_add_hook(osc_plugin_path(__FILE__) . '_configure', 'oidc_plugin_hook_configure');
 
@@ -24,7 +24,7 @@ function oidc_plugin_hook_uninstall()
 {
   // echo "UNINSTALL";
 }
-osc_add_hook(oidc_plugin_folder() . '_uninstall', 'oidc_plugin_hook_uninstall');
+osc_add_hook(dirname(__FILE__) . '_uninstall', 'oidc_plugin_hook_uninstall');
 
 // show link to configure page in admin sidebar
 function oidc_plugin_hook_admin_menu()

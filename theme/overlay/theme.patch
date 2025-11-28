@@ -351,3 +351,16 @@ diff -ruN ./base/user-profile.php ./merged/user-profile.php
          <label class="control-label" for="s_info"><?php _e('Description', 'sigma'); ?></label>
          <div class="controls">
            <?php UserForm::info_textarea('s_info', osc_locale_code(), @$osc_user['locale'][osc_locale_code()]['s_info']); ?>
+diff -ruN ./base/user-sidebar.php ./merged/user-sidebar.php
+--- ./base/user-sidebar.php	2025-11-27 14:50:39.134669091 +0000
++++ ./merged/user-sidebar.php	2025-11-28 14:31:24.333893507 +0000
+@@ -22,7 +22,7 @@
+ 
+ <div id="sidebar" class="fixed-layout">
+   <div class="fixed-close"><i class="fas fa-times"></i></div>
+-  <?php echo osc_private_user_menu( get_user_menu() ); ?>
++  <?php echo osc_private_user_menu(); ?>
+ </div>
+ 
+ <div id="dialog-delete-account" title="<?php echo osc_esc_html(__('Delete account', 'sigma')); ?>" style="display:none;"><?php _e('Are you sure you want to delete your account?', 'sigma'); ?></div>
+\ No newline at end of file

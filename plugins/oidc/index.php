@@ -1,6 +1,6 @@
 <?php
 
-require_once oidc_plugin_folder() . 'vendor/autoload.php';
+require_once dirname(__FILE__) . '/vendor/autoload.php';
 
 function oidc_plugin_admin_path()
 {
@@ -21,11 +21,6 @@ function oidc_plugin_admin_url()
 function oidc_plugin_name()
 {
   return "oidc";
-}
-
-function oidc_plugin_folder()
-{
-  return osc_plugin_folder(__FILE__);
 }
 
 function oidc_plugin_get_preference($name)
@@ -60,7 +55,7 @@ function oidc_plugin_migration_version()
 
 function oidc_plugin_migrate_database()
 {
-  $migrationPaths = glob(oidc_plugin_folder() . 'migrations/*.sql');
+  $migrationPaths = glob(dirname(__FILE__) . '/migrations/*.sql');
   $db = DBConnectionClass::newInstance()->getOsclassDb();
   $cmd = new DBCommandClass($db);
 
@@ -91,4 +86,4 @@ function oidc_plugin_login_user($user)
   Session::newInstance()->_set('userPhone', ($user['s_phone_mobile'] ? $user['s_phone_mobile'] : $user['s_phone_land']));
 }
 
-require_once oidc_plugin_folder() . 'hooks.php';
+require_once dirname(__FILE__) . '/hooks.php';

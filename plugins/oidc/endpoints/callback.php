@@ -1,6 +1,6 @@
 <?php
 
-require_once oidc_plugin_folder() . 'user.php';
+require_once dirname(__FILE__) . '/user.php';
 
 // TODO: find out how to run this correctly
 oidc_plugin_migrate_database();

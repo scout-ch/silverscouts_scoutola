@@ -50,9 +50,20 @@ The theme is stored as a patch to allow for update later on in the lifecycle.
 
 osclass must be installed on the target host, please refer to the [official documentation](https://osclass-classifieds.com/installation). 
 
+### Theme
+
+- Create a backup of the existing theme
+- `rsync -avz --delete ./theme/merged/ <HOST>:sites/scoutola.scout.ch/oc-content/themes/sigma/`
+
+### Plugins 
+
+- `rsync -avz --delete ./plugins/oidc/ <HOST>:sites/scoutola.scout.ch/oc-content/plugins/oidc/`
+- `rsync -avz --delete ./plugins/silverscouts/ <HOST>:sites/scoutola.scout.ch/oc-content/plugins/silverscouts/`
+
+
 ### Manual steps after initial setup
 
-- [ ] Enable permalinks: scoutola.scout.ch/oc-admin/index.php?page=settings&action=permalinks
+- [ ] Enable permalinks: https://scoutola.scout.ch/oc-admin/index.php?page=settings&action=permalinks
 - [ ] Copy the theme and the plugins from this repo to the destination.
 - [ ] Install the oidc and silverscout plugins: https://scoutola.scout.ch/oc-admin/index.php?page=plugins
 - [ ] Configure the oidc plugin: https://scoutola.scout.ch/oc-admin/index.php?page=plugins&action=renderplugin&file=oidc/admin.php

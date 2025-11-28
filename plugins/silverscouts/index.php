@@ -79,36 +79,3 @@ function silverscouts_plugin_hook_before_init()
   }
 }
 osc_add_hook('before_init', 'silverscouts_plugin_hook_before_init');
-
-// Override the existing menu
-function get_user_menu()
-{
-  $options   = array();
-  $options[] = array(
-    'name' => __('Public Profile'),
-    'url' => osc_user_public_profile_url(),
-    'class' => 'opt_publicprofile'
-  );
-  $options[] = array(
-    'name'  => __('Listings', 'sigma'),
-    'url'   => osc_user_list_items_url(),
-    'class' => 'opt_items'
-  );
-  $options[] = array(
-    'name' => __('Alerts', 'sigma'),
-    'url' => osc_user_alerts_url(),
-    'class' => 'opt_alerts'
-  );
-  $options[] = array(
-    'name'  => __('Account', 'sigma'),
-    'url'   => osc_user_profile_url(),
-    'class' => 'opt_account'
-  );
-  $options[] = array(
-    'name'  => __('Delete account', 'sigma'),
-    'url'   => '#',
-    'class' => 'opt_delete_account'
-  );
-
-  return $options;
-}
