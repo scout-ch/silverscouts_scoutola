@@ -63,3 +63,52 @@ function pbs_plugin_oidc_user_identity_linked($user, $identity)
 }
 
 osc_add_hook('oidc_user_identity_linked', 'pbs_plugin_oidc_user_identity_linked');
+
+function pbs_plugin_page_restricted()
+{
+  $restrictedPages = ["item", "search", "user"];
+  return in_array(Params::getParam('page'), $restrictedPages);
+}
+
+function pbs_plugin_hook_before_init()
+{
+  if (!osc_logged_user_id() && pbs_plugin_page_restricted()) {
+    // var_dump(Params::getParam('page'));
+    osc_redirect_to(osc_user_login_url());
+    exit;
+  }
+}
+osc_add_hook('before_init', 'pbs_plugin_hook_before_init');
+
+// Override the existing menu
+function get_user_menu()
+{
+  $options   = array();
+  $options[] = array(
+    'name' => __('Public Profile'),
+    'url' => osc_user_public_profile_url(),
+    'class' => 'opt_publicprofile'
+  );
+  $options[] = array(
+    'name'  => __('Listings', 'sigma'),
+    'url'   => osc_user_list_items_url(),
+    'class' => 'opt_items'
+  );
+  $options[] = array(
+    'name' => __('Alerts', 'sigma'),
+    'url' => osc_user_alerts_url(),
+    'class' => 'opt_alerts'
+  );
+  $options[] = array(
+    'name'  => __('Account', 'sigma'),
+    'url'   => osc_user_profile_url(),
+    'class' => 'opt_account'
+  );
+  $options[] = array(
+    'name'  => __('Delete account', 'sigma'),
+    'url'   => '#',
+    'class' => 'opt_delete_account'
+  );
+
+  return $options;
+}

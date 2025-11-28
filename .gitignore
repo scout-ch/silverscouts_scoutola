@@ -7,3 +7,4 @@
 plugins/google_login/
 !/composer.json
 !/composer.lock
+!/README.md
