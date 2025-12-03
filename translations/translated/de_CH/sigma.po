@@ -4,11 +4,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language: de_DE\n"
 "Language-Team: Osclass Core\n"
-"Last-Translator: Administrator <info@redivivus.ch>\n"
-"PO-Revision-Date: 2025-01-12 15:17:11\n"
+"Last-Translator: Mica <sara.rasic@pbs.ch>\n"
+"PO-Revision-Date: 2025-12-03 15:00:21\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Domain: sigma\n"
-"X-Generator: Osclass Core v8.2.1 & PHP Gettext\n"
+"X-Generator: Osclass Core v8.3.0 & PHP Gettext\n"
 "X-Poedit-Basepath: ../..\n"
 "X-Poedit-KeywordsList: __;_e;_m;_n;_mn\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -32,7 +32,7 @@ msgstr "Bring mich nach Hause"
 
 #: ../oc-content/themes/sigma/alert-form.php:24
 msgid "You have sucessfully subscribed to the alert"
-msgstr "Sie haben sich erfolgreich für den Warnhinweis angemeldet"
+msgstr "Du hast dich erfolgreich für den Warnhinweis angemeldet"
 
 #: ../oc-content/themes/sigma/alert-form.php:25
 #: ../oc-content/themes/sigma/user-change_email.php:74
@@ -49,7 +49,7 @@ msgstr "Diese Suche ist bereits abonniert"
 
 #: ../oc-content/themes/sigma/alert-form.php:62
 msgid "Subscribe to this search"
-msgstr "Abonnieren Sie diese Suche"
+msgstr "Abonnieren diese Suche"
 
 #: ../oc-content/themes/sigma/alert-form.php:77
 msgid "Subscribe now"
@@ -65,7 +65,7 @@ msgstr "Kontakt aufnehmen"
 #: ../oc-content/themes/sigma/item.php:278
 #: ../oc-content/themes/sigma/user-public-sidebar.php:30
 msgid "Your name"
-msgstr "Ihr Name"
+msgstr "Dein Name"
 
 #: ../oc-content/themes/sigma/contact.php:38
 #: ../oc-content/themes/sigma/contact.php:51
@@ -77,7 +77,7 @@ msgstr "optional"
 #: ../oc-content/themes/sigma/contact.php:44
 #: ../oc-content/themes/sigma/user-public-sidebar.php:34
 msgid "Your email address"
-msgstr "Ihre E-Mail Adresse"
+msgstr "Deine E-Mail Adresse"
 
 #: ../oc-content/themes/sigma/contact.php:50
 msgid "Subject"
@@ -108,7 +108,7 @@ msgstr "Kontakt"
 #: ../oc-content/themes/sigma/footer.php:53
 #, php-format
 msgid "Powered by <a title=\"Osclass classifieds script\" href=\"%s\">best classifieds scripts</a> osclass"
-msgstr "Powered by <a title=\"Redivivus.ch\" href=\"https://www.redivivus.ch\">Schweizer Inserate aller Art</a> Redivivus"
+msgstr "Powered by Silver Scoust und Pfadibewegung Schweiz"
 
 #: ../oc-content/themes/sigma/functions.php:32
 msgid "Latest Listings"
@@ -116,16 +116,16 @@ msgstr "Neueste Angebote"
 
 #: ../oc-content/themes/sigma/functions.php:51
 msgid "ie. PHP Programmer"
-msgstr "Search"
+msgstr "Suche"
 
 #: ../oc-content/themes/sigma/functions.php:426
 #: ../oc-content/themes/sigma/item-post.php:51
 msgid "Publish a listing"
-msgstr "Veröffentlichen Sie einen Eintrag"
+msgstr "Veröffentliche einen Eintrag"
 
 #: ../oc-content/themes/sigma/functions.php:427
 msgid "Edit your listing"
-msgstr "Bearbeiten Sie Ihren Eintrag"
+msgstr "Bearbeite deinen Eintrag"
 
 #: ../oc-content/themes/sigma/functions.php:428
 #: ../oc-content/themes/sigma/item-send-friend.php:29
@@ -135,7 +135,7 @@ msgstr "An einen Freund senden"
 #: ../oc-content/themes/sigma/functions.php:429
 #: ../oc-content/themes/sigma/item-sidebar.php:50
 msgid "Contact publisher"
-msgstr "Kontakt zum Veröffentlicher"
+msgstr "Kontakt zur Person"
 
 #: ../oc-content/themes/sigma/functions.php:430
 msgid "Search results"
@@ -165,7 +165,7 @@ msgstr "Konto"
 #: ../oc-content/themes/sigma/search.php:140
 #: ../oc-content/themes/sigma/user-alerts.php:48
 msgid "Listings"
-msgstr "Inserate"
+msgstr "Anzeigen"
 
 #: ../oc-content/themes/sigma/functions.php:436
 #: ../oc-content/themes/sigma/functions.php:478
@@ -231,16 +231,16 @@ msgstr "Theme-Einstellungen korrekt aktualisieren"
 #: ../oc-content/themes/sigma/functions.php:585
 msgid "The logo image has been uploaded correctly"
 msgstr ""
-"Das Logo Bild wurde korrekt hochgeladen\r\n"
+"Das Bild wurde korrekt hochgeladen\r\n"
 ""
 
 #: ../oc-content/themes/sigma/functions.php:587
 msgid "An error has occurred, please try again"
-msgstr "Es ist ein Fehler aufgetreten, bitte versuchen Sie es erneut"
+msgstr "Es ist ein Fehler aufgetreten, bitte versuche es erneut"
 
 #: ../oc-content/themes/sigma/functions.php:598
 msgid "The logo image has been removed"
-msgstr "Das Logo-Bild wurde entfernt"
+msgstr "Das Bild wurde entfernt"
 
 #: ../oc-content/themes/sigma/functions.php:600
 msgid "Image not found"
@@ -254,7 +254,7 @@ msgstr "Logo in der Kopfzeile"
 #: ../oc-content/themes/sigma/functions.php:625
 #: ../oc-content/themes/sigma/admin/settings.php:44
 msgid "Theme settings"
-msgstr "Theme settings"
+msgstr "Einstellungen"
 
 #: ../oc-content/themes/sigma/functions.php:687
 #: ../oc-content/themes/sigma/functions.php:709
@@ -308,7 +308,7 @@ msgstr "Registrieren"
 
 #: ../oc-content/themes/sigma/header.php:89
 msgid "What are you looking for today?"
-msgstr "Wonach suchen Sie heute?"
+msgstr "Wonach suchst du heute?"
 
 #: ../oc-content/themes/sigma/header.php:93
 msgid "Keyword"
@@ -322,7 +322,7 @@ msgstr "Katgegorie"
 #: ../oc-content/themes/sigma/header.php:99
 #: ../oc-content/themes/sigma/item-post.php:68
 msgid "Select a category"
-msgstr "Wählen Sie eine Kategorie"
+msgstr "Wählen eine Kategorie"
 
 #: ../oc-content/themes/sigma/header.php:104
 msgid "Search"
@@ -335,7 +335,7 @@ msgstr "Allgemeine Informationen"
 #: ../oc-content/themes/sigma/item-post.php:75
 #: ../oc-content/themes/sigma/item.php:316
 msgid "Title"
-msgstr "Title"
+msgstr "Titel"
 
 #: ../oc-content/themes/sigma/item-post.php:82
 #: ../oc-content/themes/sigma/user-profile.php:137
@@ -379,7 +379,7 @@ msgstr "Adresse"
 
 #: ../oc-content/themes/sigma/item-post.php:201
 msgid "Seller's information"
-msgstr "Informationen des Verkäufers"
+msgstr "Weitere Informationen"
 
 #: ../oc-content/themes/sigma/item-post.php:205
 #: ../oc-content/themes/sigma/item-sidebar.php:59
@@ -404,7 +404,7 @@ msgstr "E-Mail auf der Angebotsseite anzeigen"
 #: ../oc-content/themes/sigma/item-post.php:226
 #: ../oc-content/themes/sigma/item-sidebar.php:69
 msgid "Phone"
-msgstr "Phone"
+msgstr "Telefon"
 
 #: ../oc-content/themes/sigma/item-post.php:234
 msgid "Show phone on the listing page"
@@ -424,7 +424,7 @@ msgstr "Update"
 
 #: ../oc-content/themes/sigma/item-post.php:259
 msgid "Publish"
-msgstr "veröffentlichen."
+msgstr "Veröffentlichen"
 
 #: ../oc-content/themes/sigma/item-send-friend.php:34
 msgid "Send to friend form is disabled."
@@ -433,19 +433,19 @@ msgstr "Das Formular zum Senden an Freunde ist deaktiviert."
 #: ../oc-content/themes/sigma/item-send-friend.php:53
 #: ../oc-content/themes/sigma/item.php:284
 msgid "Your e-mail"
-msgstr "Ihre E-Mail"
+msgstr "Deine E-Mail"
 
 #: ../oc-content/themes/sigma/item-send-friend.php:60
 msgid "Your friend's name"
-msgstr "Name deines Freundes"
+msgstr "Name deine*r Freund*in"
 
 #: ../oc-content/themes/sigma/item-send-friend.php:66
 msgid "Your friend's e-mail address"
-msgstr "Die E-Mail-Adresse Ihres Freundes"
+msgstr "Die E-Mail-Adresse deine*r Freund*in"
 
 #: ../oc-content/themes/sigma/item-send-friend.php:73
 msgid "Subject (optional)"
-msgstr "Subject (optional)"
+msgstr "Betreff (optional)"
 
 #: ../oc-content/themes/sigma/item-sidebar.php:31
 msgid "Mark as..."
@@ -473,7 +473,7 @@ msgstr "Als anstössig kennzeichnen"
 
 #: ../oc-content/themes/sigma/item-sidebar.php:59
 msgid "online"
-msgstr "Online"
+msgstr "online"
 
 #: ../oc-content/themes/sigma/item-sidebar.php:73
 msgid "Other"
@@ -483,28 +483,28 @@ msgstr "Andere"
 #: ../oc-content/themes/sigma/item.php:130
 #: ../oc-content/themes/sigma/item.php:135
 msgid "Contact seller"
-msgstr "Kontakt zum Verkäufer"
+msgstr "Kontakt zur Person"
 
 #: ../oc-content/themes/sigma/item-sidebar.php:86
 msgid "The listing is expired. You can't contact the publisher."
-msgstr "Das Angebot ist abgelaufen. Sie können den Veröffentlicher nicht kontaktieren."
+msgstr "Das Angebot ist abgelaufen. Du kannst die Person nicht kontaktieren."
 
 #: ../oc-content/themes/sigma/item-sidebar.php:90
 msgid "It's your own listing, you can't contact the publisher."
-msgstr "Es ist Ihr eigener Eintrag, Sie können sich nicht an den Veröffentlicher wenden."
+msgstr "Es ist dein eigener Eintrag."
 
 #: ../oc-content/themes/sigma/item-sidebar.php:94
 msgid "You must log in or register a new account in order to contact the advertiser"
-msgstr "Sie müssen sich anmelden oder ein neues Konto registrieren, um den Inserenten zu kontaktieren."
+msgstr "Du musst dich anmelden oder ein neues Konto registrieren, um die*den Inserent*in zu kontaktieren."
 
 #: ../oc-content/themes/sigma/item-sidebar.php:111
 msgid "Your e-mail address"
-msgstr "Ihre E-Mail Adresse"
+msgstr "Deine E-Mail Adresse"
 
 #: ../oc-content/themes/sigma/item-sidebar.php:115
 #: ../oc-content/themes/sigma/user-public-sidebar.php:38
 msgid "Phone number"
-msgstr "Rufnummer"
+msgstr "Telefon"
 
 #: ../oc-content/themes/sigma/item-sidebar.php:126
 msgid "Attachment"
@@ -584,7 +584,7 @@ msgstr "nicht bewertet"
 #: ../oc-content/themes/sigma/item.php:199
 #: ../oc-content/themes/sigma/item.php:247
 msgid "Delete your comment"
-msgstr "Löschen Sie Ihren Kommentar"
+msgstr "Löschen deinen Kommentar"
 
 #: ../oc-content/themes/sigma/item.php:211
 #, php-format
@@ -597,7 +597,7 @@ msgstr "Antworten"
 
 #: ../oc-content/themes/sigma/item.php:263
 msgid "Leave your comment (spam and offensive messages will be removed)"
-msgstr "Hinterlassen Sie einen Kommentar (Spam und beleidigende Nachrichten werden entfernt)"
+msgstr "Hinterlasse einen Kommentar (Spam und beleidigende Nachrichten werden entfernt)"
 
 #: ../oc-content/themes/sigma/item.php:293
 msgid "Rating"
@@ -634,7 +634,7 @@ msgstr "Deaktivieren"
 
 #: ../oc-content/themes/sigma/loop-single.php:75
 msgid "This action can not be undone. Are you sure you want to continue?"
-msgstr "Diese Aktion kann nicht rückgängig gemacht werden. Sind Sie sicher, dass Sie fortfahren möchten?"
+msgstr "Diese Aktion kann nicht rückgängig gemacht werden. Bist du sicher, dass du fortfahren möchten?"
 
 #: ../oc-content/themes/sigma/main.php:56
 msgid "All locations"
@@ -642,7 +642,7 @@ msgstr "Alle Standorte"
 
 #: ../oc-content/themes/sigma/search-sidebar.php:43
 msgid "Your search"
-msgstr "Ihre Suche"
+msgstr "Deine Suche"
 
 #: ../oc-content/themes/sigma/search-sidebar.php:57
 msgid "Show only"
@@ -654,11 +654,11 @@ msgstr "Inserate mit Bildern"
 
 #: ../oc-content/themes/sigma/search-sidebar.php:70
 msgid "Min"
-msgstr "Min"
+msgstr "Min."
 
 #: ../oc-content/themes/sigma/search-sidebar.php:75
 msgid "Max"
-msgstr "Max"
+msgstr "Max."
 
 #: ../oc-content/themes/sigma/search-sidebar.php:99
 msgid "Apply"
@@ -700,7 +700,7 @@ msgstr "Premium-Inserate"
 
 #: ../oc-content/themes/sigma/search.php:153
 msgid "Other searches that may interest you"
-msgstr "Andere Suchanfragen, die Sie interessieren könnten"
+msgstr "Andere Suchanfragen, die dich interessieren könnten"
 
 #: ../oc-content/themes/sigma/subdomain-navigation.php:42
 msgid "Join our community to buy and sell from each other everyday around the world."
@@ -708,7 +708,7 @@ msgstr "Treten Sie unserer Gemeinschaft bei und kaufen und verkaufen Sie jeden T
 
 #: ../oc-content/themes/sigma/subdomain-navigation.php:43
 msgid "Please select preferred site:"
-msgstr "Bitte wählen Sie den gewünschten Standort:"
+msgstr "Bitte wähle den gewünschten Standort:"
 
 #: ../oc-content/themes/sigma/subdomain-navigation.php:48
 msgid "Copyright"
@@ -716,7 +716,7 @@ msgstr "Copyright"
 
 #: ../oc-content/themes/sigma/user-alerts.php:36
 msgid "You do not have any alerts yet"
-msgstr "Sie haben noch keine Warnmeldungen"
+msgstr "Du hast noch keine Warnmeldungen"
 
 #: ../oc-content/themes/sigma/user-alerts.php:43
 msgid "Alert"
@@ -724,7 +724,7 @@ msgstr "Warnhinweis"
 
 #: ../oc-content/themes/sigma/user-alerts.php:43
 msgid "This action can't be undone. Are you sure you want to continue?"
-msgstr "Diese Aktion kann nicht rückgängig gemacht werden. Sind Sie sicher, dass Sie fortfahren möchten?"
+msgstr "Diese Aktion kann nicht rückgängig gemacht werden. Bist du sicher, dass Sie fortfahren möchten?"
 
 #: ../oc-content/themes/sigma/user-alerts.php:43
 msgid "Delete this alert"
@@ -780,7 +780,7 @@ msgstr "Benutzername"
 #: ../oc-content/themes/sigma/user-forgot_password.php:27
 #: ../oc-content/themes/sigma/user-recover.php:27
 msgid "Recover your password"
-msgstr "Ihr Passwort wiederherstellen"
+msgstr "Passwort wiederherstellen"
 
 #: ../oc-content/themes/sigma/user-items.php:41
 msgid "My listings"
@@ -792,7 +792,7 @@ msgstr "Es wurden noch keine Inserate hinzugefügt"
 
 #: ../oc-content/themes/sigma/user-login.php:27
 msgid "Access to your account"
-msgstr "Zugang zu Ihrem Konto"
+msgstr "Zugang zu deinem Konto"
 
 #: ../oc-content/themes/sigma/user-login.php:43
 #: ../oc-content/themes/sigma/user-register.php:51
@@ -863,7 +863,7 @@ msgstr "Letzte Einträge"
 
 #: ../oc-content/themes/sigma/user-public-sidebar.php:60
 msgid "Enter the words above"
-msgstr "Geben Sie die Wörter oben ein"
+msgstr "Gib die Wörter oben ein"
 
 #: ../oc-content/themes/sigma/user-public-sidebar.php:62
 msgid "Help"
@@ -871,7 +871,7 @@ msgstr "Hilfe"
 
 #: ../oc-content/themes/sigma/user-recover.php:42
 msgid "Send me a new password"
-msgstr "Senden Sie mir ein neues Passwort"
+msgstr "Neues Passwort senden"
 
 #: ../oc-content/themes/sigma/user-register.php:28
 msgid "Register an account for free"
@@ -895,7 +895,7 @@ msgstr "Menü anzeigen"
 
 #: ../oc-content/themes/sigma/user-sidebar.php:28
 msgid "Are you sure you want to delete your account?"
-msgstr "Sind Sie sicher, dass Sie Ihr Konto löschen möchten?"
+msgstr "Bist du sicher, dass du dein Konto löschen möchten?"
 
 #: ../oc-content/themes/sigma/admin/header.php:33
 msgid "Preview"
