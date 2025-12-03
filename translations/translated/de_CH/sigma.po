@@ -1,0 +1,1071 @@
+msgid ""
+msgstr ""
+"Content-Transfer-Encoding: 8bit\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: de_DE\n"
+"Language-Team: Osclass Core\n"
+"Last-Translator: Administrator <info@redivivus.ch>\n"
+"PO-Revision-Date: 2025-01-12 15:17:11\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Domain: sigma\n"
+"X-Generator: Osclass Core v8.2.1 & PHP Gettext\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-KeywordsList: __;_e;_m;_n;_mn\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: ../oc-content/themes/sigma/404.php:27
+msgid "404"
+msgstr "404"
+
+#: ../oc-content/themes/sigma/404.php:28
+msgid "OOPS! Page Not Found!"
+msgstr "OOPS! Seite nicht gefunden!"
+
+#: ../oc-content/themes/sigma/404.php:29
+msgid "Either something get wrong or the page doesn't exist anymore."
+msgstr "Entweder ist etwas schief gelaufen oder die Seite existiert nicht mehr."
+
+#: ../oc-content/themes/sigma/404.php:31
+msgid "Take me home"
+msgstr "Bring mich nach Hause"
+
+#: ../oc-content/themes/sigma/alert-form.php:24
+msgid "You have sucessfully subscribed to the alert"
+msgstr "Sie haben sich erfolgreich für den Warnhinweis angemeldet"
+
+#: ../oc-content/themes/sigma/alert-form.php:25
+#: ../oc-content/themes/sigma/user-change_email.php:74
+msgid "Invalid email address"
+msgstr "Ungültige E-Mail Adresse"
+
+#: ../oc-content/themes/sigma/alert-form.php:26
+msgid "There was a problem with the alert"
+msgstr "Es gab ein Problem mit der Warnmeldung"
+
+#: ../oc-content/themes/sigma/alert-form.php:58
+msgid "Already subscribed to this search"
+msgstr "Diese Suche ist bereits abonniert"
+
+#: ../oc-content/themes/sigma/alert-form.php:62
+msgid "Subscribe to this search"
+msgstr "Abonnieren Sie diese Suche"
+
+#: ../oc-content/themes/sigma/alert-form.php:77
+msgid "Subscribe now"
+msgstr "Jetzt abonnieren"
+
+#: ../oc-content/themes/sigma/contact.php:28
+msgid "Contact us"
+msgstr "Kontakt aufnehmen"
+
+#: ../oc-content/themes/sigma/contact.php:37
+#: ../oc-content/themes/sigma/item-send-friend.php:47
+#: ../oc-content/themes/sigma/item-sidebar.php:107
+#: ../oc-content/themes/sigma/item.php:278
+#: ../oc-content/themes/sigma/user-public-sidebar.php:30
+msgid "Your name"
+msgstr "Ihr Name"
+
+#: ../oc-content/themes/sigma/contact.php:38
+#: ../oc-content/themes/sigma/contact.php:51
+#: ../oc-content/themes/sigma/item-sidebar.php:115
+#: ../oc-content/themes/sigma/user-public-sidebar.php:38
+msgid "optional"
+msgstr "optional"
+
+#: ../oc-content/themes/sigma/contact.php:44
+#: ../oc-content/themes/sigma/user-public-sidebar.php:34
+msgid "Your email address"
+msgstr "Ihre E-Mail Adresse"
+
+#: ../oc-content/themes/sigma/contact.php:50
+msgid "Subject"
+msgstr "Thema"
+
+#: ../oc-content/themes/sigma/contact.php:57
+#: ../oc-content/themes/sigma/item-send-friend.php:81
+#: ../oc-content/themes/sigma/item-sidebar.php:120
+#: ../oc-content/themes/sigma/user-public-sidebar.php:43
+msgid "Message"
+msgstr "Nachricht"
+
+#: ../oc-content/themes/sigma/contact.php:65
+#: ../oc-content/themes/sigma/item-send-friend.php:90
+#: ../oc-content/themes/sigma/item-sidebar.php:135
+#: ../oc-content/themes/sigma/item.php:334
+#: ../oc-content/themes/sigma/user-public-sidebar.php:66
+msgid "Send"
+msgstr "Senden"
+
+#: ../oc-content/themes/sigma/footer.php:32
+#: ../oc-content/themes/sigma/functions.php:445
+#: ../oc-content/themes/sigma/header.php:45
+#: ../oc-content/themes/sigma/user-public-sidebar.php:23
+msgid "Contact"
+msgstr "Kontakt"
+
+#: ../oc-content/themes/sigma/footer.php:53
+#, php-format
+msgid "Powered by <a title=\"Osclass classifieds script\" href=\"%s\">best classifieds scripts</a> osclass"
+msgstr "Powered by <a title=\"Redivivus.ch\" href=\"https://www.redivivus.ch\">Schweizer Inserate aller Art</a> Redivivus"
+
+#: ../oc-content/themes/sigma/functions.php:32
+msgid "Latest Listings"
+msgstr "Neueste Angebote"
+
+#: ../oc-content/themes/sigma/functions.php:51
+msgid "ie. PHP Programmer"
+msgstr "Search"
+
+#: ../oc-content/themes/sigma/functions.php:426
+#: ../oc-content/themes/sigma/item-post.php:51
+msgid "Publish a listing"
+msgstr "Veröffentlichen Sie einen Eintrag"
+
+#: ../oc-content/themes/sigma/functions.php:427
+msgid "Edit your listing"
+msgstr "Bearbeiten Sie Ihren Eintrag"
+
+#: ../oc-content/themes/sigma/functions.php:428
+#: ../oc-content/themes/sigma/item-send-friend.php:29
+msgid "Send to a friend"
+msgstr "An einen Freund senden"
+
+#: ../oc-content/themes/sigma/functions.php:429
+#: ../oc-content/themes/sigma/item-sidebar.php:50
+msgid "Contact publisher"
+msgstr "Kontakt zum Veröffentlicher"
+
+#: ../oc-content/themes/sigma/functions.php:430
+msgid "Search results"
+msgstr "Suchergebnisse"
+
+#: ../oc-content/themes/sigma/functions.php:431
+#, php-format
+msgid "Search results: %s"
+msgstr "Suchergebnisse: %s"
+
+#: ../oc-content/themes/sigma/functions.php:432
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: ../oc-content/themes/sigma/functions.php:433
+#, php-format
+msgid "%s's profile"
+msgstr "%s's profile"
+
+#: ../oc-content/themes/sigma/functions.php:434
+#: ../oc-content/themes/sigma/functions.php:483
+msgid "Account"
+msgstr "Konto"
+
+#: ../oc-content/themes/sigma/functions.php:435
+#: ../oc-content/themes/sigma/functions.php:473
+#: ../oc-content/themes/sigma/search.php:140
+#: ../oc-content/themes/sigma/user-alerts.php:48
+msgid "Listings"
+msgstr "Inserate"
+
+#: ../oc-content/themes/sigma/functions.php:436
+#: ../oc-content/themes/sigma/functions.php:478
+#: ../oc-content/themes/sigma/user-alerts.php:29
+#: ../oc-content/themes/sigma/user-alerts.php:34
+msgid "Alerts"
+msgstr "Warnhinweise"
+
+#: ../oc-content/themes/sigma/functions.php:437
+#: ../oc-content/themes/sigma/user-profile.php:32
+#: ../oc-content/themes/sigma/user-profile.php:38
+msgid "Update account"
+msgstr "Konto aktualisieren"
+
+#: ../oc-content/themes/sigma/functions.php:438
+#: ../oc-content/themes/sigma/functions.php:488
+msgid "Change email"
+msgstr "E-Mail ändern"
+
+#: ../oc-content/themes/sigma/functions.php:439
+#: ../oc-content/themes/sigma/functions.php:493
+#: ../oc-content/themes/sigma/user-change_username.php:31
+#: ../oc-content/themes/sigma/user-change_username.php:36
+msgid "Change username"
+msgstr "Benutzernamen ändern"
+
+#: ../oc-content/themes/sigma/functions.php:440
+#: ../oc-content/themes/sigma/functions.php:443
+#: ../oc-content/themes/sigma/functions.php:498
+#: ../oc-content/themes/sigma/user-change_password.php:29
+#: ../oc-content/themes/sigma/user-change_password.php:34
+#: ../oc-content/themes/sigma/user-forgot_password.php:49
+msgid "Change password"
+msgstr "Passwort ändern"
+
+#: ../oc-content/themes/sigma/functions.php:441
+#: ../oc-content/themes/sigma/header.php:52
+#: ../oc-content/themes/sigma/item-sidebar.php:97
+msgid "Login"
+msgstr "Login"
+
+#: ../oc-content/themes/sigma/functions.php:442
+msgid "Recover password"
+msgstr "Passwort wiederherstellen"
+
+#: ../oc-content/themes/sigma/functions.php:444
+msgid "Create a new account"
+msgstr "Ein neues Konto erstellen"
+
+#: ../oc-content/themes/sigma/functions.php:468
+msgid "Public Profile"
+msgstr "Öffentliches Profil"
+
+#: ../oc-content/themes/sigma/functions.php:503
+#: ../oc-content/themes/sigma/user-sidebar.php:28
+msgid "Delete account"
+msgstr "Konto löschen"
+
+#: ../oc-content/themes/sigma/functions.php:570
+msgid "Theme settings updated correctly"
+msgstr "Theme-Einstellungen korrekt aktualisieren"
+
+#: ../oc-content/themes/sigma/functions.php:585
+msgid "The logo image has been uploaded correctly"
+msgstr ""
+"Das Logo Bild wurde korrekt hochgeladen\r\n"
+""
+
+#: ../oc-content/themes/sigma/functions.php:587
+msgid "An error has occurred, please try again"
+msgstr "Es ist ein Fehler aufgetreten, bitte versuchen Sie es erneut"
+
+#: ../oc-content/themes/sigma/functions.php:598
+msgid "The logo image has been removed"
+msgstr "Das Logo-Bild wurde entfernt"
+
+#: ../oc-content/themes/sigma/functions.php:600
+msgid "Image not found"
+msgstr "Bild nicht gefunden"
+
+#: ../oc-content/themes/sigma/functions.php:624
+#: ../oc-content/themes/sigma/admin/header.php:27
+msgid "Header logo"
+msgstr "Logo in der Kopfzeile"
+
+#: ../oc-content/themes/sigma/functions.php:625
+#: ../oc-content/themes/sigma/admin/settings.php:44
+msgid "Theme settings"
+msgstr "Theme settings"
+
+#: ../oc-content/themes/sigma/functions.php:687
+#: ../oc-content/themes/sigma/functions.php:709
+#: ../oc-content/themes/sigma/main.php:32
+msgid "All categories"
+msgstr "Alle Kategorien"
+
+#: ../oc-content/themes/sigma/head.php:22
+#: ../oc-content/themes/sigma/item.php:199
+#: ../oc-content/themes/sigma/item.php:247
+#: ../oc-content/themes/sigma/loop-single.php:75
+msgid "Delete"
+msgstr "Löschen"
+
+#: ../oc-content/themes/sigma/head.php:23
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: ../oc-content/themes/sigma/head.php:72
+msgid "Previous image"
+msgstr "Vorheriges Bild"
+
+#: ../oc-content/themes/sigma/head.php:73
+msgid "Next image"
+msgstr "Nächstes Bild"
+
+#: ../oc-content/themes/sigma/head.php:74
+msgid "Close"
+msgstr "Schliessen"
+
+#: ../oc-content/themes/sigma/header.php:43
+msgid "Home"
+msgstr "Home"
+
+#: ../oc-content/themes/sigma/header.php:44
+#: ../oc-content/themes/sigma/header.php:61
+msgid "Publish Ad"
+msgstr "Anzeige veröffentlichen"
+
+#: ../oc-content/themes/sigma/header.php:49
+msgid "My account"
+msgstr "Mein Konto"
+
+#: ../oc-content/themes/sigma/header.php:50
+msgid "Logout"
+msgstr "Logout"
+
+#: ../oc-content/themes/sigma/header.php:55
+msgid "Register"
+msgstr "Registrieren"
+
+#: ../oc-content/themes/sigma/header.php:89
+msgid "What are you looking for today?"
+msgstr "Wonach suchen Sie heute?"
+
+#: ../oc-content/themes/sigma/header.php:93
+msgid "Keyword"
+msgstr "Schlüsselwort"
+
+#: ../oc-content/themes/sigma/header.php:98
+#: ../oc-content/themes/sigma/item-post.php:66
+msgid "Category"
+msgstr "Katgegorie"
+
+#: ../oc-content/themes/sigma/header.php:99
+#: ../oc-content/themes/sigma/item-post.php:68
+msgid "Select a category"
+msgstr "Wählen Sie eine Kategorie"
+
+#: ../oc-content/themes/sigma/header.php:104
+msgid "Search"
+msgstr "Suche"
+
+#: ../oc-content/themes/sigma/item-post.php:64
+msgid "General Information"
+msgstr "Allgemeine Informationen"
+
+#: ../oc-content/themes/sigma/item-post.php:75
+#: ../oc-content/themes/sigma/item.php:316
+msgid "Title"
+msgstr "Title"
+
+#: ../oc-content/themes/sigma/item-post.php:82
+#: ../oc-content/themes/sigma/user-profile.php:137
+msgid "Description"
+msgstr "Beschreibung"
+
+#: ../oc-content/themes/sigma/item-post.php:92
+#: ../oc-content/themes/sigma/search-sidebar.php:67
+msgid "Price"
+msgstr "Preis"
+
+#: ../oc-content/themes/sigma/item-post.php:111
+msgid "Listing Location"
+msgstr "Auflistung Standort"
+
+#: ../oc-content/themes/sigma/item-post.php:114
+#: ../oc-content/themes/sigma/user-profile.php:95
+msgid "Country"
+msgstr "Land"
+
+#: ../oc-content/themes/sigma/item-post.php:120
+#: ../oc-content/themes/sigma/item-post.php:146
+#: ../oc-content/themes/sigma/user-profile.php:101
+msgid "Region"
+msgstr "Region"
+
+#: ../oc-content/themes/sigma/item-post.php:168
+#: ../oc-content/themes/sigma/search-sidebar.php:49
+#: ../oc-content/themes/sigma/user-profile.php:107
+msgid "City"
+msgstr "Stadt"
+
+#: ../oc-content/themes/sigma/item-post.php:184
+msgid "City Area"
+msgstr "Stadtgebiet"
+
+#: ../oc-content/themes/sigma/item-post.php:190
+#: ../oc-content/themes/sigma/user-profile.php:125
+msgid "Address"
+msgstr "Adresse"
+
+#: ../oc-content/themes/sigma/item-post.php:201
+msgid "Seller's information"
+msgstr "Informationen des Verkäufers"
+
+#: ../oc-content/themes/sigma/item-post.php:205
+#: ../oc-content/themes/sigma/item-sidebar.php:59
+#: ../oc-content/themes/sigma/item-sidebar.php:61
+#: ../oc-content/themes/sigma/user-profile.php:70
+#: ../oc-content/themes/sigma/user-register.php:39
+msgid "Name"
+msgstr "Name"
+
+#: ../oc-content/themes/sigma/item-post.php:212
+#: ../oc-content/themes/sigma/item-sidebar.php:65
+#: ../oc-content/themes/sigma/user-login.php:37
+#: ../oc-content/themes/sigma/user-recover.php:34
+#: ../oc-content/themes/sigma/user-register.php:45
+msgid "E-mail"
+msgstr "E-Mail"
+
+#: ../oc-content/themes/sigma/item-post.php:220
+msgid "Show e-mail on the listing page"
+msgstr "E-Mail auf der Angebotsseite anzeigen"
+
+#: ../oc-content/themes/sigma/item-post.php:226
+#: ../oc-content/themes/sigma/item-sidebar.php:69
+msgid "Phone"
+msgstr "Phone"
+
+#: ../oc-content/themes/sigma/item-post.php:234
+msgid "Show phone on the listing page"
+msgstr "Telefon auf der Angebotsseite anzeigen"
+
+#: ../oc-content/themes/sigma/item-post.php:239
+msgid "Other contact"
+msgstr "Anderer Kontakt"
+
+#: ../oc-content/themes/sigma/item-post.php:259
+#: ../oc-content/themes/sigma/user-change_email.php:56
+#: ../oc-content/themes/sigma/user-change_password.php:61
+#: ../oc-content/themes/sigma/user-change_username.php:99
+#: ../oc-content/themes/sigma/user-profile.php:148
+msgid "Update"
+msgstr "Update"
+
+#: ../oc-content/themes/sigma/item-post.php:259
+msgid "Publish"
+msgstr "veröffentlichen."
+
+#: ../oc-content/themes/sigma/item-send-friend.php:34
+msgid "Send to friend form is disabled."
+msgstr "Das Formular zum Senden an Freunde ist deaktiviert."
+
+#: ../oc-content/themes/sigma/item-send-friend.php:53
+#: ../oc-content/themes/sigma/item.php:284
+msgid "Your e-mail"
+msgstr "Ihre E-Mail"
+
+#: ../oc-content/themes/sigma/item-send-friend.php:60
+msgid "Your friend's name"
+msgstr "Name deines Freundes"
+
+#: ../oc-content/themes/sigma/item-send-friend.php:66
+msgid "Your friend's e-mail address"
+msgstr "Die E-Mail-Adresse Ihres Freundes"
+
+#: ../oc-content/themes/sigma/item-send-friend.php:73
+msgid "Subject (optional)"
+msgstr "Subject (optional)"
+
+#: ../oc-content/themes/sigma/item-sidebar.php:31
+msgid "Mark as..."
+msgstr "Markieren als..."
+
+#: ../oc-content/themes/sigma/item-sidebar.php:32
+msgid "Mark as spam"
+msgstr "Als Spam markieren"
+
+#: ../oc-content/themes/sigma/item-sidebar.php:33
+msgid "Mark as misclassified"
+msgstr "Als falsch eingestuft markieren"
+
+#: ../oc-content/themes/sigma/item-sidebar.php:34
+msgid "Mark as duplicated"
+msgstr "Als dupliziert markieren"
+
+#: ../oc-content/themes/sigma/item-sidebar.php:35
+msgid "Mark as expired"
+msgstr "Als abgelaufen markieren"
+
+#: ../oc-content/themes/sigma/item-sidebar.php:36
+msgid "Mark as offensive"
+msgstr "Als anstössig kennzeichnen"
+
+#: ../oc-content/themes/sigma/item-sidebar.php:59
+msgid "online"
+msgstr "Online"
+
+#: ../oc-content/themes/sigma/item-sidebar.php:73
+msgid "Other"
+msgstr "Andere"
+
+#: ../oc-content/themes/sigma/item-sidebar.php:76
+#: ../oc-content/themes/sigma/item.php:130
+#: ../oc-content/themes/sigma/item.php:135
+msgid "Contact seller"
+msgstr "Kontakt zum Verkäufer"
+
+#: ../oc-content/themes/sigma/item-sidebar.php:86
+msgid "The listing is expired. You can't contact the publisher."
+msgstr "Das Angebot ist abgelaufen. Sie können den Veröffentlicher nicht kontaktieren."
+
+#: ../oc-content/themes/sigma/item-sidebar.php:90
+msgid "It's your own listing, you can't contact the publisher."
+msgstr "Es ist Ihr eigener Eintrag, Sie können sich nicht an den Veröffentlicher wenden."
+
+#: ../oc-content/themes/sigma/item-sidebar.php:94
+msgid "You must log in or register a new account in order to contact the advertiser"
+msgstr "Sie müssen sich anmelden oder ein neues Konto registrieren, um den Inserenten zu kontaktieren."
+
+#: ../oc-content/themes/sigma/item-sidebar.php:111
+msgid "Your e-mail address"
+msgstr "Ihre E-Mail Adresse"
+
+#: ../oc-content/themes/sigma/item-sidebar.php:115
+#: ../oc-content/themes/sigma/user-public-sidebar.php:38
+msgid "Phone number"
+msgstr "Rufnummer"
+
+#: ../oc-content/themes/sigma/item-sidebar.php:126
+msgid "Attachment"
+msgstr "Anhang"
+
+#: ../oc-content/themes/sigma/item-sidebar.php:147
+msgid "Useful information"
+msgstr "Nützliche Informationen"
+
+#: ../oc-content/themes/sigma/item-sidebar.php:149
+msgid "Avoid scams by acting locally or paying with PayPal"
+msgstr "Vermeiden Sie Betrug, indem Sie vor Ort handeln oder mit PayPal bezahlen."
+
+#: ../oc-content/themes/sigma/item-sidebar.php:150
+msgid "Never pay with Western Union, Moneygram or other anonymous payment services"
+msgstr "Zahlen Sie niemals mit Western Union, Moneygram oder anderen anonymen Zahlungsdiensten"
+
+#: ../oc-content/themes/sigma/item-sidebar.php:151
+msgid "Don't buy or sell outside of your country. Don't accept cashier cheques from outside your country"
+msgstr "Kaufen oder verkaufen Sie nicht außerhalb Ihres Landes. Akzeptieren Sie keine Barschecks von außerhalb Ihres Landes."
+
+#: ../oc-content/themes/sigma/item-sidebar.php:152
+msgid "This site is never involved in any transaction, and does not handle payments, shipping, guarantee transactions, provide escrow services, or offer \"buyer protection\" or \"seller certification\""
+msgstr "Diese Seite ist niemals in eine Transaktion involviert und wickelt keine Zahlungen, keinen Versand, keine Garantie für Transaktionen, keinen Treuhandservice und keinen „Käuferschutz“ oder „Verkäuferzertifizierung“ ab."
+
+#: ../oc-content/themes/sigma/item.php:62
+#, php-format
+msgid "<strong class=\"publish\">Published date:</strong> %1$s"
+msgstr "<strong class=\"publish\">Datum der Veröffentlichung:</strong> %1$s"
+
+#: ../oc-content/themes/sigma/item.php:63
+#, php-format
+msgid "<strong class=\"update\">Modified date:</strong> %1$s"
+msgstr "<strong class=\"update\">Datum der Änderung:</strong> %1$s"
+
+#: ../oc-content/themes/sigma/item.php:66
+msgid "Location"
+msgstr "Standort"
+
+#: ../oc-content/themes/sigma/item.php:73
+#: ../oc-content/themes/sigma/loop-single.php:61
+msgid "Edit item"
+msgstr "Artikel bearbeiten"
+
+#: ../oc-content/themes/sigma/item.php:86
+#: ../oc-content/themes/sigma/item.php:91
+msgid "Image"
+msgstr "Bild"
+
+#: ../oc-content/themes/sigma/item.php:138
+msgid "Share"
+msgstr "Teilen"
+
+#: ../oc-content/themes/sigma/item.php:150
+msgid "Related listings"
+msgstr "Ähnliche Einträge"
+
+#: ../oc-content/themes/sigma/item.php:165
+msgid "Comments"
+msgstr "Kommentare"
+
+#: ../oc-content/themes/sigma/item.php:178
+#: ../oc-content/themes/sigma/item.php:226
+msgid "by"
+msgstr "von"
+
+#: ../oc-content/themes/sigma/item.php:192
+#: ../oc-content/themes/sigma/item.php:240
+#, php-format
+msgid "%d of 5"
+msgstr "%d von 5"
+
+#: ../oc-content/themes/sigma/item.php:192
+msgid "not rated"
+msgstr "nicht bewertet"
+
+#: ../oc-content/themes/sigma/item.php:199
+#: ../oc-content/themes/sigma/item.php:247
+msgid "Delete your comment"
+msgstr "Löschen Sie Ihren Kommentar"
+
+#: ../oc-content/themes/sigma/item.php:211
+#, php-format
+msgid "You are replying to: %s"
+msgstr "Sie antworten auf: %s"
+
+#: ../oc-content/themes/sigma/item.php:211
+msgid "Reply"
+msgstr "Antworten"
+
+#: ../oc-content/themes/sigma/item.php:263
+msgid "Leave your comment (spam and offensive messages will be removed)"
+msgstr "Hinterlassen Sie einen Kommentar (Spam und beleidigende Nachrichten werden entfernt)"
+
+#: ../oc-content/themes/sigma/item.php:293
+msgid "Rating"
+msgstr "Bewertung"
+
+#: ../oc-content/themes/sigma/item.php:309
+#, php-format
+msgid "Not available, you have already rated this item %d time(s)"
+msgstr "Nicht verfügbar, Sie haben diesen Artikel bereits %d bewertet"
+
+#: ../oc-content/themes/sigma/item.php:322
+msgid "Click to post as standard comment and not reply"
+msgstr "Klicken Sie hier, um als Standard Kommentar zu posten und nicht zu antworten"
+
+#: ../oc-content/themes/sigma/item.php:327
+msgid "Comment"
+msgstr "Kommentar"
+
+#: ../oc-content/themes/sigma/item.php:355
+msgid "of"
+msgstr "von"
+
+#: ../oc-content/themes/sigma/loop-single.php:64
+msgid "Renew"
+msgstr "Erneuern"
+
+#: ../oc-content/themes/sigma/loop-single.php:68
+msgid "Activate"
+msgstr "Aktivieren"
+
+#: ../oc-content/themes/sigma/loop-single.php:72
+msgid "Deactivate"
+msgstr "Deaktivieren"
+
+#: ../oc-content/themes/sigma/loop-single.php:75
+msgid "This action can not be undone. Are you sure you want to continue?"
+msgstr "Diese Aktion kann nicht rückgängig gemacht werden. Sind Sie sicher, dass Sie fortfahren möchten?"
+
+#: ../oc-content/themes/sigma/main.php:56
+msgid "All locations"
+msgstr "Alle Standorte"
+
+#: ../oc-content/themes/sigma/search-sidebar.php:43
+msgid "Your search"
+msgstr "Ihre Suche"
+
+#: ../oc-content/themes/sigma/search-sidebar.php:57
+msgid "Show only"
+msgstr "Nur anzeigen"
+
+#: ../oc-content/themes/sigma/search-sidebar.php:60
+msgid "listings with pictures"
+msgstr "Inserate mit Bildern"
+
+#: ../oc-content/themes/sigma/search-sidebar.php:70
+msgid "Min"
+msgstr "Min"
+
+#: ../oc-content/themes/sigma/search-sidebar.php:75
+msgid "Max"
+msgstr "Max"
+
+#: ../oc-content/themes/sigma/search-sidebar.php:99
+msgid "Apply"
+msgstr "Anwenden"
+
+#: ../oc-content/themes/sigma/search-sidebar.php:108
+msgid "Refine category"
+msgstr "Kategorie erweitern"
+
+#: ../oc-content/themes/sigma/search.php:55
+msgid "Selected"
+msgstr "Ausgewählte"
+
+#: ../oc-content/themes/sigma/search.php:56
+msgid "Nothing selected, input was"
+msgstr "Nichts ausgewählt, Eingabe war"
+
+#: ../oc-content/themes/sigma/search.php:76
+#, php-format
+msgid "There are no results matching \"%s\""
+msgstr "Es gibt keine Ergebnisse zu \"%s\""
+
+#: ../oc-content/themes/sigma/search.php:80
+#, php-format
+msgid "%d - %d of %d listings"
+msgstr "%d - %d von %d Inserate"
+
+#: ../oc-content/themes/sigma/search.php:83
+msgid "Show filters"
+msgstr "Filter anzeigen"
+
+#: ../oc-content/themes/sigma/search.php:87
+msgid "Sort by"
+msgstr "Sortieren nach"
+
+#: ../oc-content/themes/sigma/search.php:131
+msgid "Premium listings"
+msgstr "Premium-Inserate"
+
+#: ../oc-content/themes/sigma/search.php:153
+msgid "Other searches that may interest you"
+msgstr "Andere Suchanfragen, die Sie interessieren könnten"
+
+#: ../oc-content/themes/sigma/subdomain-navigation.php:42
+msgid "Join our community to buy and sell from each other everyday around the world."
+msgstr "Treten Sie unserer Gemeinschaft bei und kaufen und verkaufen Sie jeden Tag im ganzen Land."
+
+#: ../oc-content/themes/sigma/subdomain-navigation.php:43
+msgid "Please select preferred site:"
+msgstr "Bitte wählen Sie den gewünschten Standort:"
+
+#: ../oc-content/themes/sigma/subdomain-navigation.php:48
+msgid "Copyright"
+msgstr "Copyright"
+
+#: ../oc-content/themes/sigma/user-alerts.php:36
+msgid "You do not have any alerts yet"
+msgstr "Sie haben noch keine Warnmeldungen"
+
+#: ../oc-content/themes/sigma/user-alerts.php:43
+msgid "Alert"
+msgstr "Warnhinweis"
+
+#: ../oc-content/themes/sigma/user-alerts.php:43
+msgid "This action can't be undone. Are you sure you want to continue?"
+msgstr "Diese Aktion kann nicht rückgängig gemacht werden. Sind Sie sicher, dass Sie fortfahren möchten?"
+
+#: ../oc-content/themes/sigma/user-alerts.php:43
+msgid "Delete this alert"
+msgstr "Diese Warnmeldung löschen"
+
+#: ../oc-content/themes/sigma/user-change_email.php:30
+#: ../oc-content/themes/sigma/user-change_email.php:35
+msgid "Change e-mail"
+msgstr "E-Mail ändern"
+
+#: ../oc-content/themes/sigma/user-change_email.php:43
+msgid "Current e-mail"
+msgstr "Aktuelle E-Mail"
+
+#: ../oc-content/themes/sigma/user-change_email.php:49
+msgid "New e-mail"
+msgstr "Neue E-Mail"
+
+#: ../oc-content/themes/sigma/user-change_email.php:73
+msgid "Email: this field is required"
+msgstr "E-Mail: dieses Feld ist erforderlich"
+
+#: ../oc-content/themes/sigma/user-change_password.php:42
+msgid "Current password"
+msgstr "Aktuelles Passwort"
+
+#: ../oc-content/themes/sigma/user-change_password.php:48
+#: ../oc-content/themes/sigma/user-forgot_password.php:36
+msgid "New password"
+msgstr "Neues Passwort"
+
+#: ../oc-content/themes/sigma/user-change_password.php:54
+#: ../oc-content/themes/sigma/user-forgot_password.php:42
+msgid "Repeat new password"
+msgstr "Neues Passwort wiederholen"
+
+#: ../oc-content/themes/sigma/user-change_username.php:47
+msgid "Username: this field is required"
+msgstr "Benutzername: dieses Feld ist erforderlich"
+
+#: ../oc-content/themes/sigma/user-change_username.php:72
+msgid "The username is available"
+msgstr "Der Benutzername ist verfügbar"
+
+#: ../oc-content/themes/sigma/user-change_username.php:74
+msgid "The username is NOT available"
+msgstr "Der Benutzername ist NICHT verfügbar"
+
+#: ../oc-content/themes/sigma/user-change_username.php:91
+msgid "Username"
+msgstr "Benutzername"
+
+#: ../oc-content/themes/sigma/user-forgot_password.php:27
+#: ../oc-content/themes/sigma/user-recover.php:27
+msgid "Recover your password"
+msgstr "Ihr Passwort wiederherstellen"
+
+#: ../oc-content/themes/sigma/user-items.php:41
+msgid "My listings"
+msgstr "Meine Inserate"
+
+#: ../oc-content/themes/sigma/user-items.php:43
+msgid "No listings have been added yet"
+msgstr "Es wurden noch keine Inserate hinzugefügt"
+
+#: ../oc-content/themes/sigma/user-login.php:27
+msgid "Access to your account"
+msgstr "Zugang zu Ihrem Konto"
+
+#: ../oc-content/themes/sigma/user-login.php:43
+#: ../oc-content/themes/sigma/user-register.php:51
+msgid "Password"
+msgstr "Passwort"
+
+#: ../oc-content/themes/sigma/user-login.php:51
+msgid "Remember me"
+msgstr "Erinnere mich"
+
+#: ../oc-content/themes/sigma/user-login.php:61
+msgid "Log in"
+msgstr "Einloggen"
+
+#: ../oc-content/themes/sigma/user-login.php:66
+msgid "Register for a free account"
+msgstr "Für ein kostenloses Konto registrieren"
+
+#: ../oc-content/themes/sigma/user-login.php:67
+msgid "Forgot password?"
+msgstr "Passwort vergessen?"
+
+#: ../oc-content/themes/sigma/user-profile.php:53
+msgid "Picture"
+msgstr "Bild"
+
+#: ../oc-content/themes/sigma/user-profile.php:76
+msgid "User type"
+msgstr "Benutzertyp"
+
+#: ../oc-content/themes/sigma/user-profile.php:83
+msgid "Mobile phone"
+msgstr "Mobiltelefon"
+
+#: ../oc-content/themes/sigma/user-profile.php:89
+msgid "Land phone"
+msgstr "Festnetztelefon"
+
+#: ../oc-content/themes/sigma/user-profile.php:113
+msgid "City area"
+msgstr "Stadtgebiet"
+
+#: ../oc-content/themes/sigma/user-profile.php:119
+msgid "ZIP"
+msgstr "PLZ"
+
+#: ../oc-content/themes/sigma/user-profile.php:131
+msgid "Website"
+msgstr "Website"
+
+#: ../oc-content/themes/sigma/user-public-profile.php:76
+#, php-format
+msgid "<strong>Address:</strong> %1$s"
+msgstr "<strong>Adresse:</strong> %1$s"
+
+#: ../oc-content/themes/sigma/user-public-profile.php:79
+#, php-format
+msgid "<strong>Location:</strong> %1$s"
+msgstr "<strong>Standort:</strong> %1$s"
+
+#: ../oc-content/themes/sigma/user-public-profile.php:87
+msgid "User description"
+msgstr "Benutzerbeschreibung"
+
+#: ../oc-content/themes/sigma/user-public-profile.php:96
+msgid "Latest listings"
+msgstr "Letzte Einträge"
+
+#: ../oc-content/themes/sigma/user-public-sidebar.php:60
+msgid "Enter the words above"
+msgstr "Geben Sie die Wörter oben ein"
+
+#: ../oc-content/themes/sigma/user-public-sidebar.php:62
+msgid "Help"
+msgstr "Hilfe"
+
+#: ../oc-content/themes/sigma/user-recover.php:42
+msgid "Send me a new password"
+msgstr "Senden Sie mir ein neues Passwort"
+
+#: ../oc-content/themes/sigma/user-register.php:28
+msgid "Register an account for free"
+msgstr "Kostenloses Konto registrieren"
+
+#: ../oc-content/themes/sigma/user-register.php:57
+msgid "Repeat password"
+msgstr "Passwort wiederholen"
+
+#: ../oc-content/themes/sigma/user-register.php:61
+msgid "Passwords don't match"
+msgstr "Passwörter stimmen nicht überein"
+
+#: ../oc-content/themes/sigma/user-register.php:72
+msgid "Create account"
+msgstr "Konto erstellen"
+
+#: ../oc-content/themes/sigma/user-sidebar.php:20
+msgid "Display menu"
+msgstr "Menü anzeigen"
+
+#: ../oc-content/themes/sigma/user-sidebar.php:28
+msgid "Are you sure you want to delete your account?"
+msgstr "Sind Sie sicher, dass Sie Ihr Konto löschen möchten?"
+
+#: ../oc-content/themes/sigma/admin/header.php:33
+msgid "Preview"
+msgstr "Vorschau"
+
+#: ../oc-content/themes/sigma/admin/header.php:40
+msgid "Remove logo"
+msgstr "Logo entfernen"
+
+#: ../oc-content/themes/sigma/admin/header.php:47
+msgid "No logo has been uploaded yet"
+msgstr "Es wurde noch kein Logo hochgeladen"
+
+#: ../oc-content/themes/sigma/admin/header.php:50
+msgid "Upload logo"
+msgstr "Logo hochladen"
+
+#: ../oc-content/themes/sigma/admin/header.php:51
+msgid "The preferred size of the logo is 600x100."
+msgstr "Die bevorzugte Größe des Logos ist 600x100."
+
+#: ../oc-content/themes/sigma/admin/header.php:53
+msgid "<strong>Note:</strong> Uploading another logo will overwrite the current logo."
+msgstr "<strong>Hinweis:</strong> Wenn Sie ein anderes Logo hochladen, wird das aktuelle Logo überschrieben."
+
+#: ../oc-content/themes/sigma/admin/header.php:61
+msgid "Logo image (png,gif,jpg)"
+msgstr "Logo-Bild (png,gif,jpg)"
+
+#: ../oc-content/themes/sigma/admin/header.php:67
+msgid "Upload"
+msgstr "Hochladen"
+
+#: ../oc-content/themes/sigma/admin/header.php:76
+#, php-format
+msgid "The images folder <strong>%s</strong> is not writable on your server"
+msgstr "Der Bilderordner <strong>%s</strong> auf Ihrem Server nicht beschreibbar ist"
+
+#: ../oc-content/themes/sigma/admin/header.php:77
+msgid "Osclass can't upload the logo image from the administration panel."
+msgstr "Osclass kann das Logobild nicht über das Administrationspanel hochladen."
+
+#: ../oc-content/themes/sigma/admin/header.php:78
+msgid "Please make the aforementioned image folder writable."
+msgstr "Bitte machen Sie den oben erwähnten Image-Ordner beschreibbar."
+
+#: ../oc-content/themes/sigma/admin/header.php:83
+msgid "To make a directory writable under UNIX execute this command from the shell:"
+msgstr "Um ein Verzeichnis unter UNIX beschreibbar zu machen, führen Sie diesen Befehl in der Shell aus:"
+
+#: ../oc-content/themes/sigma/admin/settings.php:34
+msgid "I would like to contribute to the development of Osclass with a donation of"
+msgstr "Ich möchte die Entwicklung von Osclass mit einer Spende von"
+
+#: ../oc-content/themes/sigma/admin/settings.php:39
+msgid "Custom"
+msgstr "Benutzerdefiniert"
+
+#: ../oc-content/themes/sigma/admin/settings.php:40
+msgid "Donate"
+msgstr "Spende"
+
+#: ../oc-content/themes/sigma/admin/settings.php:50
+msgid "Search placeholder"
+msgstr "Platzhalter für die Suche"
+
+#: ../oc-content/themes/sigma/admin/settings.php:54
+msgid "Show lists as:"
+msgstr "Listen anzeigen als:"
+
+#: ../oc-content/themes/sigma/admin/settings.php:57
+msgid "Gallery"
+msgstr "Galerie"
+
+#: ../oc-content/themes/sigma/admin/settings.php:58
+msgid "List"
+msgstr "Liste"
+
+#: ../oc-content/themes/sigma/admin/settings.php:64
+msgid "Footer link"
+msgstr "Footer link"
+
+#: ../oc-content/themes/sigma/admin/settings.php:66
+msgid "I want to help Osclass by linking to <a href=\"https://osclass-classifieds.com/\" target=\"_blank\">osclass</a> from my site with the following text:"
+msgstr "Ich möchte Osclass helfen, indem ich einen Link zu <a href=„https://osclass-classifieds.com/“ target=„_blank“>osclass</a> von meiner Website aus mit folgendem Text setze:"
+
+#: ../oc-content/themes/sigma/admin/settings.php:67
+msgid "This website is proudly using the <a title=\"Osclass web\" href=\"https://osclass-classifieds.com/\">classifieds scripts</a> software <strong>Osclass</strong>"
+msgstr "Diese Website verwendet mit Stolz die <a title=\"Osclass web\" href=\"https://osclass-classifieds.com/\">classifieds scripts</a> software <strong>Osclass</strong>"
+
+#: ../oc-content/themes/sigma/admin/settings.php:76
+msgid "Right-To-Left (RTL)"
+msgstr "Rechts-nach-links (RTL)"
+
+#: ../oc-content/themes/sigma/admin/settings.php:80
+msgid "Enable Right-To-Left"
+msgstr "Aktivieren von Rechts-nach-Links"
+
+#: ../oc-content/themes/sigma/admin/settings.php:83
+msgid "enable/disable"
+msgstr "aktivieren/deaktivieren"
+
+#: ../oc-content/themes/sigma/admin/settings.php:91
+msgid "Location input"
+msgstr "Standort-Eingabe"
+
+#: ../oc-content/themes/sigma/admin/settings.php:95
+msgid "Show location input as:"
+msgstr "Standorteingabe anzeigen als:"
+
+#: ../oc-content/themes/sigma/admin/settings.php:98
+msgid "Dropdown"
+msgstr "Dropdown"
+
+#: ../oc-content/themes/sigma/admin/settings.php:99
+msgid "Autocomplete"
+msgstr "Autovervollständigen"
+
+#: ../oc-content/themes/sigma/admin/settings.php:106
+msgid "Ads management"
+msgstr "Anzeigenverwaltung"
+
+#: ../oc-content/themes/sigma/admin/settings.php:110
+msgid "In this section you can configure your site to display ads and start generating revenue."
+msgstr "In diesem Bereich können Sie Ihre Website so konfigurieren, dass Sie Anzeigen schalten und damit Einnahmen erzielen können."
+
+#: ../oc-content/themes/sigma/admin/settings.php:110
+msgid "If you are using an online advertising platform, such as Google Adsense, copy and paste here the provided code for ads."
+msgstr "Wenn Sie eine Online-Werbeplattform wie Google Adsense verwenden, kopieren Sie den bereitgestellten Code für Anzeigen und fügen ihn hier ein."
+
+#: ../oc-content/themes/sigma/admin/settings.php:116
+msgid "Header 728x90"
+msgstr "Header 728x90"
+
+#: ../oc-content/themes/sigma/admin/settings.php:120
+msgid "This ad will be shown at the top of your website, next to the site title and above the search results. Note that the size of the ad has to be 728x90 pixels."
+msgstr "Diese Anzeige wird oben auf Ihrer Website, neben dem Titel der Website und über den Suchergebnissen angezeigt. Beachten Sie, dass die Größe der Anzeige 728x90 Pixel betragen muss."
+
+#: ../oc-content/themes/sigma/admin/settings.php:124
+msgid "Homepage 728x90"
+msgstr "Homepage 728x90"
+
+#: ../oc-content/themes/sigma/admin/settings.php:128
+msgid "This ad will be shown on the main site of your website. It will appear both at the top and bottom of your site homepage. Note that the size of the ad has to be 728x90 pixels."
+msgstr "Diese Anzeige wird auf der Hauptseite Ihrer Website angezeigt. Sie wird sowohl oben als auch unten auf der Startseite Ihrer Website erscheinen. Beachten Sie, dass die Größe der Anzeige 728x90 Pixel betragen muss."
+
+#: ../oc-content/themes/sigma/admin/settings.php:132
+msgid "Search results 728x90 (top of the page)"
+msgstr "Suchergebnisse 728x90 (oben auf der Seite)"
+
+#: ../oc-content/themes/sigma/admin/settings.php:136
+msgid "This ad will be shown on top of the search results of your site. Note that the size of the ad has to be 728x90 pixels."
+msgstr "Diese Anzeige wird oben in den Suchergebnissen Ihrer Website angezeigt. Beachten Sie, dass die Größe der Anzeige 728x90 Pixel betragen muss."
+
+#: ../oc-content/themes/sigma/admin/settings.php:140
+msgid "Search results 728x90 (middle of the page)"
+msgstr "Suchergebnisse 728x90 (Mitte der Seite)"
+
+#: ../oc-content/themes/sigma/admin/settings.php:144
+msgid "This ad will be shown among the search results of your site. Note that the size of the ad has to be 728x90 pixels."
+msgstr "Diese Anzeige wird unter den Suchergebnissen Ihrer Website angezeigt. Beachten Sie, dass die Größe der Anzeige 728x90 Pixel betragen muss."
+
+#: ../oc-content/themes/sigma/admin/settings.php:148
+msgid "Sidebar 300x250"
+msgstr "Sidebar 300x250"
+
+#: ../oc-content/themes/sigma/admin/settings.php:152
+msgid "This ad will be shown at the right sidebar of your website, on the product detail page. Note that the size of the ad has to be 300x350 pixels."
+msgstr "Diese Anzeige wird in der rechten Seitenleiste Ihrer Website, auf der Produktdetailseite, angezeigt. Beachten Sie, dass die Größe der Anzeige 300x350 Pixel betragen muss."
+
+#: ../oc-content/themes/sigma/admin/settings.php:156
+msgid "Save changes"
+msgstr "Änderungen speichern"

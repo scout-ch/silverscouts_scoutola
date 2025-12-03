@@ -46,6 +46,10 @@ The theme is stored as a patch to allow for update later on in the lifecycle.
 - The oidc plugin has composer dependencies. Install them with `composer install` from the plugins folder.
 - The oidc plugin also relies on a database. If you make changes to the schema, you must create a migration in the *migrations/* folder as an SQL-file. Increment the version number to ensure it's applied correctly.
 
+### Translations
+
+The translations can be changed directly in the admin. However, the could easily get overwritten, so the translations are stored in *translations/translated/* as well. 
+
 ## Deployment
 
 osclass must be installed on the target host, please refer to the [official documentation](https://osclass-classifieds.com/installation). 

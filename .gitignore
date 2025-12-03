@@ -4,7 +4,10 @@
 !.htaccess
 !plugins
 !theme
-plugins/google_login/
+/theme/merged
+/theme/base
 !/composer.json
 !/composer.lock
 !/README.md
+!/translations
+/translations/base/
