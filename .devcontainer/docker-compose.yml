@@ -9,7 +9,7 @@ services:
     depends_on:
       - db
   db:
-    image: mariadb:11.3
+    image: mariadb:12.3
     environment:
       MARIADB_ROOT_PASSWORD: osclass
       MARIADB_DATABASE: osclass

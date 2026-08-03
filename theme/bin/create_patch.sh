@@ -1,4 +1,3 @@
 #!/bin/bash
 
-
-diff -ruN ./base/ ./merged/ > ./overlay/theme.patch
+diff -ruN ./base/ ./merged/ > ./patch/theme.patch

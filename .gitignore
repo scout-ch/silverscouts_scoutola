@@ -10,4 +10,5 @@
 !/composer.lock
 !/README.md
 !/translations
+!/.github/
 /translations/base/
