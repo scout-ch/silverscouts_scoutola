@@ -19,7 +19,7 @@ $user = $identityDAO->findUserByUserInfo(oidc_plugin_name(), (array) $userInfo);
 // check if login succeeded
 if (!empty($user)) {
   oidc_plugin_login_user($user);
-  osc_add_flash_ok_message(__("The user has been created successfully"));
+  osc_add_flash_ok_message(__("Login successful"));
 
   $redirect = osc_user_dashboard_url();
   // osc_run_hook('after_oidc_login_success', $user, (array) $userInfo, $client);

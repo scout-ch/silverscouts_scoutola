@@ -1,0 +1,23 @@
+msgid ""
+msgstr ""
+"Content-Transfer-Encoding: 8bit\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: de_DE\n"
+"Language-Team: Osclass Core\n"
+"Last-Translator: Administrator <filou.linux@gmail.com>\n"
+"PO-Revision-Date: 2026-08-10 13:32:59\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Domain: oidc\n"
+"X-Generator: Osclass Core v8.3.1 & PHP Gettext\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-KeywordsList: __;_e;_m;_n;_mn\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: ../oc-content/plugins/oidc/endpoints/callback.php:22
+msgid "Login successful"
+msgstr "Login erfolgreich"
+
+#: ../oc-content/plugins/oidc/endpoints/callback.php:29
+msgid "We were not able to identify you given the information provided"
+msgstr "Login fehlgeschlagen"
