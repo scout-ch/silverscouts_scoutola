@@ -19,14 +19,14 @@ $user = $identityDAO->findUserByUserInfo(oidc_plugin_name(), (array) $userInfo);
 // check if login succeeded
 if (!empty($user)) {
   oidc_plugin_login_user($user);
-  osc_add_flash_ok_message(__("Login successful"));
+  osc_add_flash_ok_message(_m("Login successful"));
 
   $redirect = osc_user_dashboard_url();
   // osc_run_hook('after_oidc_login_success', $user, (array) $userInfo, $client);
   osc_run_hook('after_login', $user, $redirect);
 } else {
 
-  osc_add_flash_error_message(__("We were not able to identify you given the information provided"));
+  osc_add_flash_error_message(_m("We were not able to identify you given the information provided"));
   $redirect = osc_base_url();
 }
 

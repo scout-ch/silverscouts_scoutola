@@ -1,0 +1,2 @@
+ALTER TABLE /*TABLE_PREFIX*/t_item_stats DROP COLUMN IF EXISTS i_num_contacts;
+ALTER TABLE /*TABLE_PREFIX*/t_item_stats ADD i_num_contacts INT(10) UNSIGNED NOT NULL DEFAULT 0;
