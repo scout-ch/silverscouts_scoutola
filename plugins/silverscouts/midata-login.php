@@ -9,33 +9,33 @@ function silverscouts_plugin_oidc_user_identity_linked($user, $identity)
 {
   $userDAO = User::newInstance();
   $userInfo = unserialize($identity['s_user_info']);
-  $country = Country::newInstance()->findByCode($userInfo['country']);
-  $city = City::newInstance()->findByName($userInfo['town']);
-  // $region = Region::newInstance()->findByName()
   $updateData = [
     's_name' => "{$userInfo['first_name']} {$userInfo['last_name']} / {$userInfo['nickname']}",
-    // 's_phone_land',
-    // 's_phone_mobile',
-    'fk_c_country_code' => $country['pk_c_id'],
-    // 's_country' => $country['pk_i_id'],
-    // 's_country_native' => $country['pk_i_id'],
-    's_address' => "{$userInfo['street']} {$userInfo['housenumber']}",
-    's_zip' => "{$userInfo['zip_code']}",
-    // 'fk_i_region_id',
-    // 's_region',
-    // 's_region_native',
-    'fk_i_city_id' => $city["pk_i_id"],
-    // 's_city',
-    // 's_city_native',
-    // 'fk_i_city_area_id',
-    // 's_city_area',
-    // 'd_coord_lat',
-    // 'd_coord_long',
-    // 'b_company',
-    // 'fk_c_locale_code'
   ];
   $userDAO->update($updateData, ['pk_i_id' => $user['pk_i_id']]);
 
   Session::newInstance()->_set('userName', $updateData['s_name']);
 }
 osc_add_hook('oidc_user_identity_linked', 'silverscouts_plugin_oidc_user_identity_linked');
+
+function silverscouts_plugin_post_item()
+{
+  $session = Session::newInstance();
+  $userInfo = $session->_get('oidcUserInfo');
+
+  if (isset($userInfo) && !empty($userInfo)) {
+    $country = Country::newInstance()->findByCode($userInfo['country']);
+    $session->_setForm('countryId', $country['pk_i_id']);
+
+    $city = City::newInstance()->findByName($userInfo['town']);
+    if (isset($city) && !empty($city)) {
+      $session->_setForm('cityId', $city['pk_i_id']);
+      $session->_setForm('regionId', $city['fk_i_region_id']);
+    }
+
+    $session->_setForm('zip', "{$userInfo['zip_code']}");
+    $session->_setForm('cityArea', "{$userInfo['zip_code']}");
+    $session->_setForm('address', "{$userInfo['address']}");
+  }
+}
+osc_add_filter("post_item", 'silverscouts_plugin_post_item');

@@ -1,6 +1,6 @@
 <?php
 
-require_once dirname(__FILE__) . '/../user.php';
+require_once dirname(__FILE__) . '/../oidc-identity.php';
 
 // TODO: find out how to run this correctly
 oidc_plugin_migrate_database();
@@ -10,11 +10,15 @@ $client = oidc_plugin_client();
 $client->authenticate();
 $userInfo = $client->requestUserInfo();
 
+Session::newInstance()->_set('oidcIdToken', $client->getIdToken());
+Session::newInstance()->_set('oidcAccessToken', $client->getAccessToken());
+Session::newInstance()->_set('oidcUserInfo', json_decode(json_encode($userInfo), true));
+
 osc_run_hook('before_login');
 
 // prepare osc user
 $identityDAO = new OIDCIdentity();
-$user = $identityDAO->findUserByUserInfo(oidc_plugin_name(), (array) $userInfo);
+$user = $identityDAO->linkUserWithUserInfo(oidc_plugin_name(), (array) $userInfo);
 
 // check if login succeeded
 if (!empty($user)) {

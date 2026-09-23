@@ -158,7 +158,7 @@ class OIDCIdentity extends DAO
     return $user;
   }
 
-  public function findUserByUserInfo($provider, $userInfo)
+  public function linkUserWithUserInfo($provider, $userInfo)
   {
     $identity = $this->findOrCreateByUserInfo($provider, $userInfo);
     $user = $this->linkUserToIdentity($identity, $userInfo);
@@ -168,5 +168,11 @@ class OIDCIdentity extends DAO
     }
 
     return $user;
+  }
+
+  public function getUserInfo()
+  {
+    $client = oidc_plugin_client();
+    return $client->requestUserInfo();
   }
 }
