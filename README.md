@@ -52,7 +52,7 @@ The theme is stored as a patch to allow for update later on in the lifecycle.
 
 ### Translations
 
-The translations can be changed directly in the admin. However, the could easily get overwritten, so the translations are stored in _translations/translated/_ as well.
+The translations can be changed directly in the admin. However, they could easily get overwritten, so the translations are stored in _translations/translated/_ as well.
 
 ## Deployment
 
