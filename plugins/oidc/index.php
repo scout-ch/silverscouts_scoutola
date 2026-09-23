@@ -48,31 +48,6 @@ function oidc_plugin_client()
   return $oidc;
 }
 
-function oidc_plugin_migration_version()
-{
-  return strval(oidc_plugin_get_preference('migration_version'));
-}
-
-function oidc_plugin_migrate_database()
-{
-  $migrationPaths = glob(dirname(__FILE__) . '/migrations/*.sql');
-  $db = DBConnectionClass::newInstance()->getOsclassDb();
-  $cmd = new DBCommandClass($db);
-
-  foreach ($migrationPaths as $migrationPath) {
-    $migrationVersion = basename($migrationPath, '.sql');
-    if ($migrationVersion <= oidc_plugin_migration_version()) continue;
-
-    $migrationSql = file_get_contents($migrationPath);
-
-    if (!$cmd->importSQL($migrationSql)) {
-      throw new Exception("Migration failed");
-    }
-
-    oidc_plugin_set_preference('migration_version', $migrationVersion);
-  }
-}
-
 function oidc_plugin_login_user($user)
 {
   // Cookie::newInstance()->set_expires(osc_time_cookie());
@@ -86,4 +61,5 @@ function oidc_plugin_login_user($user)
   Session::newInstance()->_set('userPhone', ($user['s_phone_mobile'] ? $user['s_phone_mobile'] : $user['s_phone_land']));
 }
 
+require_once dirname(__FILE__) . '/database.php';
 require_once dirname(__FILE__) . '/hooks.php';

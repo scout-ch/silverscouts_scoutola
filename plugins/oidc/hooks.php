@@ -37,8 +37,8 @@ function oidc_plugin_hook_admin_menu()
   </ul>
 <?php
 }
-osc_add_hook('admin_menu', 'oidc_plugin_hook_admin_menu', 1);
 
+osc_add_hook('admin_menu', 'oidc_plugin_hook_admin_menu', 1);
 
 osc_add_route('oidc_plugin_login', 'auth/oidc/login', 'auth/oidc/login', basename(dirname(__FILE__)) . '/endpoints/login.php');
 // osc_add_route('oidc_plugin_logout', 'auth/oidc/logout', 'auth/oidc/logout', basename(dirname(__FILE__)) . '/endpoints/logout.php');
