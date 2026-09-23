@@ -1,9 +1,20 @@
 services:
   php:
-    build: .
+    build: ..
     ports:
       - "8000:8000"
     command: sleep infinity
+    environment:
+      DB_NAME: osclass
+      DB_USER: osclass
+      DB_PASSWORD: osclass
+      DB_HOST: db
+      DB_TABLE_PREFIX: oc_
+      REL_WEB_URL: '/'
+      WEB_PATH: http://localhost:8000/
+      OSC_DEBUG: true
+      OSC_DEBUG_DB: true
+      OSC_DEBUG_LOG: true
     volumes:
       - ../:/workspace:cached
     depends_on:

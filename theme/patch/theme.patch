@@ -1,6 +1,6 @@
-diff -ruN ./base/css/style.css ./merged/css/style.css
---- ./merged/css/style.css	2025-11-27 14:50:39.123229607 +0000
-+++ ./merged/css/style.css	2025-11-28 14:45:45.187398584 +0000
+diff -ruN ../base/css/style.css ./css/style.css
+--- ./css/style.css	2025-11-27 14:50:39.123229607 +0000
++++ ./css/style.css	2025-11-28 14:45:45.187398584 +0000
 @@ -1,5 +1,16 @@
 +/* Theme */
 +@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
@@ -162,9 +162,9 @@ diff -ruN ./base/css/style.css ./merged/css/style.css
 +  padding-left: 59px;
 +}
 \ No newline at end of file
-diff -ruN ./base/functions.php ./merged/functions.php
---- ./merged/functions.php	2025-11-27 14:50:39.124755910 +0000
-+++ ./merged/functions.php	2025-11-28 12:56:11.854657427 +0000
+diff -ruN ../base/functions.php ./functions.php
+--- ./functions.php	2025-11-27 14:50:39.124755910 +0000
++++ ./functions.php	2025-11-28 12:56:11.854657427 +0000
 @@ -22,7 +22,7 @@
  
  // Get latest items for home page
@@ -175,9 +175,9 @@ diff -ruN ./base/functions.php ./merged/functions.php
      osc_reset_latest_items();
      
      if(osc_count_latest_items() > 0) { 
-diff -ruN ./base/head.php ./merged/head.php
---- ./merged/head.php	2025-11-27 14:50:39.124936489 +0000
-+++ ./merged/head.php	2025-11-28 09:23:37.490073486 +0000
+diff -ruN ../base/head.php ./head.php
+--- ./head.php	2025-11-27 14:50:39.124936489 +0000
++++ ./head.php	2025-11-28 09:23:37.490073486 +0000
 @@ -85,14 +85,9 @@
    echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>';
  }, 7);
@@ -193,9 +193,9 @@ diff -ruN ./base/head.php ./merged/head.php
  if(osc_is_publish_page() || osc_is_edit_page() || osc_is_search_page()) {
    if($jquery_version == '1') {
      osc_enqueue_style('jquery-ui', osc_assets_url('css/jquery-ui/jquery-ui.css'));
-diff -ruN ./base/item-sidebar.php ./merged/item-sidebar.php
---- ./merged/item-sidebar.php	2025-11-27 14:50:39.126980226 +0000
-+++ ./merged/item-sidebar.php	2025-11-28 09:46:18.939175424 +0000
+diff -ruN ../base/item-sidebar.php ./item-sidebar.php
+--- ./item-sidebar.php	2025-11-27 14:50:39.126980226 +0000
++++ ./item-sidebar.php	2025-11-28 09:46:18.939175424 +0000
 @@ -143,15 +143,5 @@
  
    <?php osc_run_hook('item_contact'); ?>
@@ -212,9 +212,9 @@ diff -ruN ./base/item-sidebar.php ./merged/item-sidebar.php
 -  
    <?php osc_run_hook('item_sidebar_bottom'); ?>
  </div><!-- /sidebar -->
-diff -ruN ./base/item.php ./merged/item.php
---- ./merged/item.php	2025-11-27 14:50:39.127153629 +0000
-+++ ./merged/item.php	2025-11-28 09:53:43.264416601 +0000
+diff -ruN ../base/item.php ./item.php
+--- ./item.php	2025-11-27 14:50:39.127153629 +0000
++++ ./item.php	2025-11-28 09:53:43.264416601 +0000
 @@ -122,7 +122,6 @@
  
      <div class="item-hook"><?php osc_run_hook('item_detail', osc_item() ); ?></div>
@@ -232,9 +232,9 @@ diff -ruN ./base/item.php ./merged/item.php
  
    </div>
    <!-- plugins -->
-diff -ruN ./base/user-login.php ./merged/user-login.php
---- ./merged/user-login.php	2025-11-27 14:50:39.133854705 +0000
-+++ ./merged/user-login.php	2025-11-28 10:16:16.145166816 +0000
+diff -ruN ../base/user-login.php ./user-login.php
+--- ./user-login.php	2025-11-27 14:50:39.133854705 +0000
++++ ./user-login.php	2025-11-28 10:16:16.145166816 +0000
 @@ -16,57 +16,18 @@
   */
  
@@ -300,9 +300,9 @@ diff -ruN ./base/user-login.php ./merged/user-login.php
 -<?php osc_current_web_theme_path('footer.php') ; ?>
 \ No newline at end of file
 +<?php osc_current_web_theme_path('footer.php'); ?>
-diff -ruN ./base/user-profile.php ./merged/user-profile.php
---- ./merged/user-profile.php	2025-11-27 14:50:39.133990932 +0000
-+++ ./merged/user-profile.php	2025-11-28 10:40:12.896979790 +0000
+diff -ruN ../base/user-profile.php ./user-profile.php
+--- ./user-profile.php	2025-11-27 14:50:39.133990932 +0000
++++ ./user-profile.php	2025-11-28 10:40:12.896979790 +0000
 @@ -73,25 +73,12 @@
          </div>
        </div>
@@ -354,9 +354,9 @@ diff -ruN ./base/user-profile.php ./merged/user-profile.php
          <label class="control-label" for="s_info"><?php _e('Description', 'sigma'); ?></label>
          <div class="controls">
            <?php UserForm::info_textarea('s_info', osc_locale_code(), @$osc_user['locale'][osc_locale_code()]['s_info']); ?>
-diff -ruN ./base/user-sidebar.php ./merged/user-sidebar.php
---- ./merged/user-sidebar.php	2025-11-27 14:50:39.134669091 +0000
-+++ ./merged/user-sidebar.php	2025-11-28 14:31:24.333893507 +0000
+diff -ruN ../base/user-sidebar.php ./user-sidebar.php
+--- ./user-sidebar.php	2025-11-27 14:50:39.134669091 +0000
++++ ./user-sidebar.php	2025-11-28 14:31:24.333893507 +0000
 @@ -22,7 +22,7 @@
  
  <div id="sidebar" class="fixed-layout">

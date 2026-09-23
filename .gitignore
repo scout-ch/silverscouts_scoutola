@@ -1,5 +1,7 @@
 /*
 !.devcontainer/
+!.docker/
+!Dockerfile
 !.gitignore
 !.htaccess
 !plugins
