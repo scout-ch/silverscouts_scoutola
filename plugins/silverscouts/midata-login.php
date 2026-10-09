@@ -25,7 +25,9 @@ function silverscouts_plugin_post_item()
 
   if (isset($userInfo) && !empty($userInfo)) {
     $country = Country::newInstance()->findByCode($userInfo['country']);
-    $session->_setForm('countryId', $country['pk_i_id']);
+    if (isset($city) && !empty($city)) {
+      $session->_setForm('countryId', $country['pk_i_id']);
+    }
 
     $city = City::newInstance()->findByName($userInfo['town']);
     if (isset($city) && !empty($city)) {

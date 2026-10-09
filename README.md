@@ -61,6 +61,8 @@ osclass must be installed on the target host, please refer to the [official docu
 ### Theme
 
 - Create a backup of the existing theme
+- Make sure local theme is uptodate
+- Create patch
 - `rsync -avz --delete --exclude languages/ ./theme/merged/ <HOST>:sites/scoutola.scout.ch/oc-content/themes/sigma/`
 
 ### Plugins
@@ -70,7 +72,7 @@ osclass must be installed on the target host, please refer to the [official docu
 
 ### Manual steps after initial setup
 
-- [ ] Enable permalinks: https://scoutola.scout.ch/oc-admin/index.php?page=settings&action=permalinks
+- [ ] Disable permalinks: https://scoutola.scout.ch/oc-admin/index.php?page=settings&action=permalinks
 - [ ] Copy the theme and the plugins from this repo to the destination.
 - [ ] Install the oidc and silverscout plugins: https://scoutola.scout.ch/oc-admin/index.php?page=plugins
 - [ ] Configure the oidc plugin: https://scoutola.scout.ch/oc-admin/index.php?page=plugins&action=renderplugin&file=oidc/admin.php
