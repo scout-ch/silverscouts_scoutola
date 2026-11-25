@@ -21,8 +21,8 @@ To start development, follow these steps:
 
 1. Reopen the repo as a devcontainer in VS Code
 1. In a terminal inside the devcontainer, run `.docker/setup_osclass.sh` to download and extract osclass
-   - Specify a version: `.docker/setup_osclass.sh 8.3.1`
-   - Remove zip file after extraction: `.docker/setup_osclass.sh --rm` or `.docker/setup_osclass.sh 8.3.1 --rm`
+   - Specify a version: `.docker/setup_osclass.sh 8.4.0`
+   - Remove zip file after extraction: `.docker/setup_osclass.sh --rm` or `.docker/setup_osclass.sh 8.4.0 --rm`
    - Note: The script skips download if the zip file already exists
 1. Install composer dependencies with `cd plugins/oidc; composer install`
 1. Run `php -S 0.0.0.0:8000` to start the php webserver
@@ -57,6 +57,12 @@ The translations can be changed directly in the admin. However, the could easily
 ## Deployment
 
 osclass must be installed on the target host, please refer to the [official documentation](https://osclass-classifieds.com/installation).
+
+### Container image
+
+A GitHub Actions workflow publishes the production container image to GHCR for this repository:
+
+- Image: `ghcr.io/scout-ch/silverscouts_scoutola`
 
 ### Theme
 
