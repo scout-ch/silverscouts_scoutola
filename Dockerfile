@@ -27,7 +27,7 @@ WORKDIR /var/www/html
 COPY --chown=www-data:www-data .docker/setup_osclass.sh .docker/setup_osclass.sh
 RUN .docker/setup_osclass.sh ${OSCLASS_VERSION} --rm
 COPY --chown=www-data:www-data .htaccess .htaccess
-COPY --chown=www-data:www-data config.php config.php
+# COPY --chown=www-data:www-data config.php config.php
 COPY --chown=www-data:www-data plugins oc-content/plugins
 COPY --chown=www-data:www-data theme/patch oc-content/themes/sigma
 RUN cd /var/www/html/oc-content/plugins/oidc && \
