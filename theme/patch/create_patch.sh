@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ./merged
+cd ../merged
 
 # Create patch files for each file that differs between base and merged
 find . -type f -name '*.php' | while read file; do

@@ -33,8 +33,7 @@ COPY --chown=www-data:www-data theme/patch oc-content/themes/sigma
 RUN cd /var/www/html/oc-content/plugins/oidc && \
     composer install --no-interaction --prefer-dist && \
     cd /var/www/html/oc-content/themes/sigma && \
-    patch --merge --verbose -p1 < ./theme.patch && \
-    rm ./theme.patch
+    bash ./apply_patch.sh --source . --target .
 
 COPY .docker/security.ini /usr/local/etc/php/conf.d/security.ini
 
