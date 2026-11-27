@@ -1,4 +1,4 @@
-FROM php:8.5-apache AS base
+FROM php:8.6-apache AS base
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends unzip wget curl ca-certificates \

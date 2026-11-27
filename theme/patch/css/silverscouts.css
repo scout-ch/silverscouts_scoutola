@@ -1,0 +1,113 @@
+/* Overrides extracted from the theme patch. Load after style.css. */
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap'); */
+
+:root {
+  --theme-color-header-bg: #ecf2f5;
+  --theme-color-footer-bg: #ecf2f5;
+  --primary-color-main-light: #618ead;
+  --primary-color-main-dark: #056786;
+  --base-font-family: 'Source Sans 3', sans-serif;
+  --heading-font-family: 'Source Sans 3', sans-serif;
+}
+
+html,
+input,
+select,
+textarea,
+button {
+  font-family: var(--base-font-family);
+}
+
+h1,
+h2.h1 {
+  font-family: var(--heading-font-family);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+input:active,
+select:active,
+textarea:active {
+  border-color: var(--primary-color-main-light);
+}
+
+a,
+a:hover {
+  color: var(--primary-color-main-light);
+}
+
+button,
+.btn,
+.btn.btn-primary,
+.btn.btn-primary.btn-loading:hover,
+.btn.btn-primary:disabled:hover,
+body .qq-upload-button {
+  background-color: var(--primary-color-main-light);
+}
+
+button,
+.btn {
+  border-color: var(--primary-color-main-light);
+}
+
+.btn.btn-primary,
+.btn.btn-primary.btn-loading:hover,
+.btn.btn-primary:disabled:hover {
+  border-color: var(--primary-color-main-light);
+}
+
+header .nav a:hover {
+  border-color: var(--primary-color-main-light);
+}
+
+#home-cats a .icon,
+.item-photos .thumbs img:hover,
+#related-searches a {
+  color: var(--primary-color-main-light);
+}
+
+.item-photos .thumbs img:hover {
+  border-color: var(--primary-color-main-light);
+}
+
+#related-searches a {
+  border-color: var(--primary-color-main-light);
+}
+
+footer,
+body.home header,
+body.home section.home-search,
+body.home section.header-ad,
+.item #comments {
+  background-color: var(--theme-color-footer-bg);
+}
+
+body.home header,
+body.home section.home-search,
+body.home section.header-ad,
+.item #comments {
+  background-color: var(--theme-color-header-bg);
+}
+
+form.search h1 small {
+  font-size: 0.5em;
+}
+
+#login_open,
+.btn-login {
+  color: #fff;
+  background-color: var(--primary-color-main-dark);
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  background-size: auto 95%;
+  padding-left: 59px;
+}
+
+#useful-info {
+  display: none;
+}
+
+.item-views {
+  display: none;
+}

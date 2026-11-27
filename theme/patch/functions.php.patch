@@ -1,0 +1,11 @@
+--- ../base/functions.php	2026-08-03 13:24:53.280653249 +0000
++++ functions.php	2026-11-27 12:49:48.656203370 +0000
+@@ -22,7 +22,7 @@
+ 
+ // Get latest items for home page
+ function sigma_home_latest() {
+-  if(osc_is_home_page()) {
++  if(osc_is_home_page() && osc_logged_user_id()) {
+     osc_run_hook('home_premium');
+ 
+     osc_reset_latest_items();

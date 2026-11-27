@@ -1,0 +1,53 @@
+--- ../base/user-profile.php	2026-08-03 13:24:53.282863779 +0000
++++ user-profile.php	2026-11-27 12:49:48.658219781 +0000
+@@ -73,25 +73,12 @@
+         </div>
+       </div>
+       <div class="control-group">
+-        <label class="control-label" for="user_type"><?php _e('User type', 'sigma'); ?></label>
+-        <div class="controls">
+-          <?php UserForm::is_company_select(osc_user()); ?>
+-        </div>
+-      </div>
+-
+-      <div class="control-group">
+         <label class="control-label" for="phoneMobile"><?php _e('Mobile phone', 'sigma'); ?></label>
+         <div class="controls">
+           <?php UserForm::mobile_text(osc_user()); ?>
+         </div>
+       </div>
+       <div class="control-group">
+-        <label class="control-label" for="phoneLand"><?php _e('Land phone', 'sigma'); ?></label>
+-        <div class="controls">
+-          <?php UserForm::phone_land_text(osc_user()); ?>
+-        </div>
+-      </div>
+-      <div class="control-group">
+         <label class="control-label" for="country"><?php _e('Country', 'sigma'); ?></label>
+         <div class="controls">
+           <?php UserForm::country_select(osc_get_countries(), osc_user()); ?>
+@@ -116,24 +103,12 @@
+         </div>
+       </div>
+       <div class="control-group">
+-        <label class="control-label" for="city_area"><?php _e('ZIP', 'sigma'); ?></label>
+-        <div class="controls">
+-          <?php UserForm::zip_text(osc_user()); ?>
+-        </div>
+-      </div>
+-      <div class="control-group">
+         <label class="control-label"l for="address"><?php _e('Address', 'sigma'); ?></label>
+         <div class="controls">
+           <?php UserForm::address_text(osc_user()); ?>
+         </div>
+       </div>
+       <div class="control-group">
+-        <label class="control-label" for="webSite"><?php _e('Website', 'sigma'); ?></label>
+-        <div class="controls">
+-          <?php UserForm::website_text(osc_user()); ?>
+-        </div>
+-      </div>
+-      <div class="control-group">
+         <label class="control-label" for="s_info"><?php _e('Description', 'sigma'); ?></label>
+         <div class="controls">
+           <?php UserForm::info_textarea('s_info', osc_locale_code(), @$osc_user['locale'][osc_locale_code()]['s_info']); ?>

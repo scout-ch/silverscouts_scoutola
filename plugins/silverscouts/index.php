@@ -41,3 +41,4 @@ osc_add_hook('before_init', 'silverscouts_plugin_hook_before_init');
 require_once dirname(__FILE__) . '/database.php';
 require_once dirname(__FILE__) . '/midata-login.php';
 require_once dirname(__FILE__) . '/contact-stats.php';
+require_once dirname(__FILE__) . '/theme.php';

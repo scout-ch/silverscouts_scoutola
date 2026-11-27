@@ -1,0 +1,12 @@
+--- ../base/user-sidebar.php	2026-08-03 13:24:53.283098889 +0000
++++ user-sidebar.php	2026-11-27 12:49:48.659716984 +0000
+@@ -26,7 +26,7 @@
+ 
+ <div id="sidebar" class="fixed-layout">
+   <div class="fixed-close"><i class="fas fa-times"></i></div>
+-  <?php echo osc_private_user_menu( get_user_menu() ); ?>
++  <?php echo osc_private_user_menu(); ?>
+ </div>
+ 
+ <div id="dialog-delete-account" title="<?php echo osc_esc_html(__('Delete account', 'sigma')); ?>" style="display:none;"><?php _e('Are you sure you want to delete your account?', 'sigma'); ?></div>
+\ No newline at end of file
