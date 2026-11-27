@@ -1,6 +1,14 @@
 --- ../base/user-login.php	2026-08-03 13:24:53.282863779 +0000
-+++ user-login.php	2026-11-27 12:49:48.661232100 +0000
-@@ -27,46 +27,7 @@
++++ user-login.php	2026-11-27 13:35:16.329625012 +0000
+@@ -22,51 +22,15 @@
+     sigma_add_body_class('login');
+     osc_current_web_theme_path('header.php');
+ ?>
++<div class="wrapper">
++    <?php echo __('midata_login_hint'); ?>
++</p>
+ <div class="form-container form-horizontal form-container-box">
+     <div class="header">
          <h1><?php _e('Access to your account', 'sigma'); ?></h1>
      </div>
      <div class="resp-wrapper">

@@ -1,5 +1,5 @@
 --- ../base/user-sidebar.php	2026-08-03 13:24:53.283098889 +0000
-+++ user-sidebar.php	2026-11-27 12:49:48.659716984 +0000
++++ user-sidebar.php	2026-11-27 12:50:31.364875161 +0000
 @@ -26,7 +26,7 @@
  
  <div id="sidebar" class="fixed-layout">

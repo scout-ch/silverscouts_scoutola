@@ -5,7 +5,7 @@ function silverscouts_plugin_hook_home_search_pre()
   ?>
     <section class="home-search">
       <div class="wrapper">
-        XXX
+        <?php echo __('midata_login_hint'); ?>
       </div>
     </section>
   <?php

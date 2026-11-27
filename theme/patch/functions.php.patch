@@ -1,5 +1,5 @@
 --- ../base/functions.php	2026-08-03 13:24:53.280653249 +0000
-+++ functions.php	2026-11-27 12:49:48.656203370 +0000
++++ functions.php	2026-11-27 12:50:31.359874882 +0000
 @@ -22,7 +22,7 @@
  
  // Get latest items for home page
